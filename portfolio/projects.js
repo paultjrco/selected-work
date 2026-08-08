@@ -142,8 +142,8 @@ window.PORTFOLIO_DATA = {
       ]
     },
     "212073": {
-      title: "From rough idea to convincing prototype.",
-      summary: "Selected retail, environmental, mechanical, and production work—combining rapid ideation, 2D and 3D design, hands-on fabrication, and careful execution across materials and scales.",
+      title: "Think it through. Make it real.",
+      summary: "A designer’s eye, UX instincts, and a prototyper’s hands—turning ambiguous ideas into testable digital and physical experiences.",
       projectIds: [
         "brown-bear-tree",
         "randall-core-samples",
