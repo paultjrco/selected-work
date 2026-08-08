@@ -157,7 +157,16 @@
 
       const description = document.createElement("p");
       description.textContent = project.description;
-      item.append(heading, description);
+      item.appendChild(heading);
+
+      if (project.status) {
+        const status = document.createElement("span");
+        status.className = "related-project__status";
+        status.textContent = project.status;
+        item.appendChild(status);
+      }
+
+      item.appendChild(description);
 
       if (project.capabilities && project.capabilities.length) {
         const capabilityText = document.createElement("p");

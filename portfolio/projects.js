@@ -77,9 +77,10 @@ window.PORTFOLIO_DATA = {
   relatedProjects: [
     {
       id: "vendor-assistant",
-      title: "Vendor Assistant — Point-of-Purchase Touchscreen Kiosk",
-      description: "Designed and prototyped a modular retail touchscreen kiosk integrating a Raspberry Pi, capacitive display, custom Figma interface, and a mixed-media enclosure developed with Fusion 360 and 3D printing. On-site research and rapid iteration addressed touch interaction, structure, mechanics, and thermal management.",
-      capabilities: ["Retail technology", "Figma", "Fusion 360", "3D printing", "Physical/digital prototyping"]
+      title: "Vendor Assistant — Modular Engagement Touchscreen",
+      status: "Ongoing",
+      description: "Developing a modular touchscreen experience for vendors and small businesses to use at tabling events or in business lobbies, helping visitors explore information, interact with the organization, and make a connection. The interface and system concept incorporate Figma, a Raspberry Pi, and a capacitive display; the custom physical enclosure has not yet been completed.",
+      capabilities: ["Visitor engagement", "Figma", "Raspberry Pi", "Touch interaction", "Physical/digital prototyping"]
     },
     {
       id: "ai-work-log",

@@ -259,6 +259,19 @@ h1 {
   color: #454741;
 }
 
+.related-project__status {
+  display: inline-block;
+  margin: 0 0 14px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: #84381f;
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .related-project__capabilities {
   margin-bottom: 14px;
   color: var(--muted);
