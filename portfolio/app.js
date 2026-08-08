@@ -3,23 +3,36 @@
 
   const data = window.PORTFOLIO_DATA;
   const params = new URLSearchParams(window.location.search);
-  const collectionKey = params.get("v") || "prototype";
+  const collectionKey = params.get("v");
   const explicitIds = (params.get("work") || "")
     .split(",")
     .map((id) => id.trim())
     .filter(Boolean);
 
   const defaultCollection = data.collections.prototype;
-  const collection = data.collections[collectionKey] || defaultCollection;
-  const requestedIds = explicitIds.length ? explicitIds : collection.projectIds;
+  const collection = collectionKey ? data.collections[collectionKey] : null;
+  const requestedIds = explicitIds.length
+    ? explicitIds
+    : collection
+      ? collection.projectIds
+      : [];
   const projectsById = new Map(data.projects.map((project) => [project.id, project]));
   const selectedProjects = requestedIds
     .map((id) => projectsById.get(id))
     .filter(Boolean);
+  const presentation = selectedProjects.length
+    ? collection || defaultCollection
+    : null;
 
-  document.title = `${collection.title} — Paul Tomanpos, Jr.`;
-  document.getElementById("portfolio-title").textContent = collection.title;
-  document.getElementById("portfolio-summary").textContent = collection.summary;
+  if (presentation) {
+    document.title = `${presentation.title} — Paul Tomanpos, Jr.`;
+    document.getElementById("portfolio-title").textContent = presentation.title;
+    document.getElementById("portfolio-summary").textContent = presentation.summary;
+  } else {
+    document.title = "Portfolio link incomplete — Paul Tomanpos, Jr.";
+    document.getElementById("portfolio-title").textContent = "This portfolio link is incomplete.";
+    document.getElementById("portfolio-summary").textContent = "Please check the URL you received and make sure the complete link was copied correctly.";
+  }
 
   const projectList = document.getElementById("project-list");
   const fragment = document.createDocumentFragment();
