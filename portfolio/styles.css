@@ -211,6 +211,71 @@ h1 {
   color: #84381f;
 }
 
+.related-projects {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.65fr) minmax(0, 1.35fr);
+  gap: clamp(40px, 7vw, 88px);
+  padding: 0 0 clamp(96px, 14vw, 168px);
+  border-top: 1px solid var(--line);
+}
+
+.related-projects__intro {
+  padding-top: clamp(56px, 8vw, 88px);
+}
+
+.related-projects__intro h2 {
+  margin-bottom: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.related-projects__intro > p:last-child {
+  color: var(--muted);
+}
+
+.related-projects__list {
+  display: grid;
+}
+
+.related-project {
+  padding: clamp(36px, 5vw, 56px) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.related-project h3 {
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.45rem, 3vw, 2.2rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.related-project > p:not(.related-project__capabilities) {
+  margin-bottom: 14px;
+  color: #454741;
+}
+
+.related-project__capabilities {
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.related-project__link {
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 750;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 .site-footer {
   padding: 64px 0 44px;
   border-top: 1px solid var(--line);
@@ -252,6 +317,11 @@ h1 {
 
   .project__image-wrap {
     aspect-ratio: 5 / 4;
+  }
+
+  .related-projects {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 }
 

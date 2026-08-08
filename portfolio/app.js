@@ -116,4 +116,70 @@
   });
 
   projectList.replaceChildren(fragment);
+
+  const relatedIds = collection && collection.relatedProjectIds
+    ? collection.relatedProjectIds
+    : [];
+  const relatedById = new Map((data.relatedProjects || []).map((project) => [project.id, project]));
+  const relatedProjects = relatedIds
+    .map((id) => relatedById.get(id))
+    .filter(Boolean);
+
+  if (relatedProjects.length) {
+    const relatedSection = document.createElement("section");
+    relatedSection.className = "related-projects";
+    relatedSection.setAttribute("aria-labelledby", "related-projects-title");
+
+    const relatedIntro = document.createElement("div");
+    relatedIntro.className = "related-projects__intro";
+
+    const eyebrow = document.createElement("p");
+    eyebrow.className = "eyebrow";
+    eyebrow.textContent = "Additional experience";
+
+    const relatedHeading = document.createElement("h2");
+    relatedHeading.id = "related-projects-title";
+    relatedHeading.textContent = "More relevant work";
+
+    const relatedSummary = document.createElement("p");
+    relatedSummary.textContent = "Additional projects demonstrating digital prototyping, visual systems, AI experimentation, and the connection between interface design and real-world use.";
+    relatedIntro.append(eyebrow, relatedHeading, relatedSummary);
+
+    const relatedList = document.createElement("div");
+    relatedList.className = "related-projects__list";
+
+    relatedProjects.forEach((project) => {
+      const item = document.createElement("article");
+      item.className = "related-project";
+
+      const heading = document.createElement("h3");
+      heading.textContent = project.title;
+
+      const description = document.createElement("p");
+      description.textContent = project.description;
+      item.append(heading, description);
+
+      if (project.capabilities && project.capabilities.length) {
+        const capabilityText = document.createElement("p");
+        capabilityText.className = "related-project__capabilities";
+        capabilityText.textContent = project.capabilities.join(" · ");
+        item.appendChild(capabilityText);
+      }
+
+      if (project.url) {
+        const link = document.createElement("a");
+        link.className = "related-project__link";
+        link.href = project.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "View case study";
+        item.appendChild(link);
+      }
+
+      relatedList.appendChild(item);
+    });
+
+    relatedSection.append(relatedIntro, relatedList);
+    projectList.insertAdjacentElement("afterend", relatedSection);
+  }
 })();

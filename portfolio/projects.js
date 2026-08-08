@@ -74,6 +74,42 @@ window.PORTFOLIO_DATA = {
       tags: ["environmental-graphics", "cnc", "fabrication", "visual-design", "event", "signage"]
     }
   ],
+  relatedProjects: [
+    {
+      id: "vendor-assistant",
+      title: "Vendor Assistant — Point-of-Purchase Touchscreen Kiosk",
+      description: "Designed and prototyped a modular retail touchscreen kiosk integrating a Raspberry Pi, capacitive display, custom Figma interface, and a mixed-media enclosure developed with Fusion 360 and 3D printing. On-site research and rapid iteration addressed touch interaction, structure, mechanics, and thermal management.",
+      capabilities: ["Retail technology", "Figma", "Fusion 360", "3D printing", "Physical/digital prototyping"]
+    },
+    {
+      id: "ai-work-log",
+      title: "AI-Powered Voice-Note Work Log",
+      description: "Designed and built a functioning voice-first system for tracking concurrent projects and generating actionable summaries. The prototype combines iOS Shortcuts, Zapier, Google Sheets, AI models, and prompt engineering to reduce workflow friction during hands-on work.",
+      capabilities: ["AI prototyping", "Workflow design", "Prompt engineering", "Systems integration"],
+      url: "https://www.paultjr.com/case_study/ai-work-log/"
+    },
+    {
+      id: "matchwell",
+      title: "Matchwell Travel Nurse Staffing Application",
+      description: "Led a complex 0-to-1 product from discovery and whiteboard concepts through user flows, iterative reviews, and high-fidelity prototypes. The work demonstrates autonomous problem framing, progressive disclosure, stakeholder alignment, and detailed Figma execution.",
+      capabilities: ["0-to-1 design", "Rapid ideation", "Figma prototyping", "Stakeholder collaboration"],
+      url: "https://www.paultjr.com/case_study/matchwell/"
+    },
+    {
+      id: "field-guides",
+      title: "Web-Based Field Guides",
+      description: "Transformed printed outdoor guides into a responsive, reusable digital system balancing typography, imagery, maps, variable content, and technical constraints. Produced mobile and desktop comps, custom visual assets, and implementation-ready designs.",
+      capabilities: ["Visual systems", "Responsive design", "Production assets", "Typography"],
+      url: "https://www.paultjr.com/case_study/web-based-field-guides/"
+    },
+    {
+      id: "family-health-tracker",
+      title: "Family Health Tracker",
+      description: "Owned an independent product concept from research and strategy through detailed Figma systems, realistic data structures, reporting, and AI-assisted workflows. Iterative scope decisions focused the experience on treatment adherence and clear caregiver feedback.",
+      capabilities: ["Independent ownership", "Figma systems", "AI-assisted research", "Information design"],
+      url: "https://www.paultjr.com/case_study/familyhealthtracker/"
+    }
+  ],
   collections: {
     prototype: {
       title: "Physical ideas, made tangible.",
@@ -114,6 +150,13 @@ window.PORTFOLIO_DATA = {
         "climate-progress",
         "asian-art-seating",
         "cals-corner"
+      ],
+      relatedProjectIds: [
+        "vendor-assistant",
+        "ai-work-log",
+        "matchwell",
+        "field-guides",
+        "family-health-tracker"
       ]
     }
   }
