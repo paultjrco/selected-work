@@ -43,9 +43,9 @@ window.PORTFOLIO_DATA = {
       ],
       description: [
         "Created a memorial library environment centered on a fabricated tree that integrates with the architecture and wraps into the stair railings. Branches, foliage, lighting, signage, and spatial details turn an ordinary circulation area into a distinctive place for reading and gathering.",
-        "Worked closely with a general contractor to coordinate the environmental design, scenic fabrication, finish work, and on-site installation. The surrounding experience also included custom signage and faux cobblestone accents made with foam, aggregate, and paint."
+        "Worked closely with a general contractor to coordinate the environmental design, scenic fabrication, finish work, and on-site installation. I also took the custom acrylic signage from design and printing through production onto acrylic and acrylic cutting, and created faux cobblestone accents using foam, aggregate, and paint."
       ],
-      capabilities: ["Environmental design", "Contractor collaboration", "Custom signage", "Mixed materials", "On-site installation"],
+      capabilities: ["Environmental design", "Contractor collaboration", "Acrylic signage", "Mixed materials", "On-site installation"],
       tags: ["fabrication", "education", "environment", "scenic", "installation", "experience-design"]
     },
     {
@@ -73,10 +73,10 @@ window.PORTFOLIO_DATA = {
       image: "portfolio/images-web/IMG_3006.jpg",
       alt: "Finished arrangement of modular black and gray gallery seating platforms",
       description: [
-        "Fabricated and finished modular gallery seating and display components to museum exhibition standards. The work moved from accurately cut MDF parts through assembly, seam filling, detailed sanding, priming, painting, transport, and installation.",
-        "Production emphasized consistency across repeated components, clean public-facing surfaces, careful handling, and close coordination with preparators and exhibit designers under an active installation schedule."
+        "Fabricated and finished modular gallery seating and display components to museum exhibition standards. My work moved from accurately cut MDF parts through assembly, seam filling, detailed sanding, priming, painting, and transport.",
+        "Production emphasized consistency across repeated components, clean public-facing surfaces, careful handling, and close coordination with preparators and exhibit designers under an active exhibition-production schedule."
       ],
-      capabilities: ["Precision woodworking", "Production mockups", "MDF fabrication", "Surface finishing", "Installation"],
+      capabilities: ["Precision woodworking", "Production coordination", "MDF fabrication", "Surface finishing", "Transport"],
       tags: ["museum", "fabrication", "woodworking", "finishing", "installation", "production"]
     },
     {
