@@ -26,7 +26,18 @@
 
   if (presentation) {
     document.title = `${presentation.title} — Paul Tomanpos, Jr.`;
-    document.getElementById("portfolio-title").textContent = presentation.title;
+    const portfolioTitle = document.getElementById("portfolio-title");
+    if (presentation.titleLines) {
+      const titleLines = presentation.titleLines.map((line) => {
+        const span = document.createElement("span");
+        span.className = "intro__title-line";
+        span.textContent = line;
+        return span;
+      });
+      portfolioTitle.replaceChildren(...titleLines);
+    } else {
+      portfolioTitle.textContent = presentation.title;
+    }
     document.getElementById("portfolio-summary").textContent = presentation.summary;
   } else {
     document.title = "Portfolio link incomplete — Paul Tomanpos, Jr.";

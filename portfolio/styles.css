@@ -94,6 +94,10 @@ h1 {
   line-height: 0.96;
 }
 
+.intro__title-line {
+  display: block;
+}
+
 .intro__summary {
   max-width: 690px;
   margin-bottom: 0;

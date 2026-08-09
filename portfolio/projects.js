@@ -9,9 +9,9 @@ window.PORTFOLIO_DATA = {
       alt: "Completed artificial tree installation framing a doorway inside a toy store",
       description: [
         "Designed and fabricated a large artificial tree environment that transforms a standard retail doorway into an immersive focal point. The modular structure combines sculpted trunks, branching canopies, nesting openings, artificial foliage, scenic texture, and layered paint to create a convincing organic form within an existing store interior.",
-        "The work required planning for scale, transport, assembly, durability, and safe installation. Materials and techniques included foam, wood, structural reinforcement, lightweight GFRC mortar, fiberglass, epoxy-based repairs, scenic painting, and integrated natural-looking branches."
+        "Worked closely with a general contractor while planning for scale, transport, assembly, durability, and safe installation. Materials and techniques included foam, wood, structural reinforcement, lightweight GFRC mortar, fiberglass, epoxy-based repairs, scenic painting, and integrated natural-looking branches."
       ],
-      capabilities: ["Retail environment", "Scale fabrication", "Mixed materials", "Scenic finishing", "Installation"],
+      capabilities: ["Retail environment", "Scale fabrication", "Mixed materials", "Contractor collaboration", "Installation"],
       tags: ["fabrication", "retail", "environment", "scenic", "installation", "prototyping"]
     },
     {
@@ -23,9 +23,9 @@ window.PORTFOLIO_DATA = {
       alt: "Library environment with a sculpted tree, curved staircase, branch railings, and reading spaces",
       description: [
         "Created a memorial library environment centered on a fabricated tree that integrates with the architecture and wraps into the stair railings. Branches, foliage, lighting, signage, and spatial details turn an ordinary circulation area into a distinctive place for reading and gathering.",
-        "The project combined environmental design, scenic fabrication, finish work, and on-site installation. The surrounding experience also included custom signage and faux cobblestone accents made with foam, aggregate, and paint."
+        "Worked closely with a general contractor to coordinate the environmental design, scenic fabrication, finish work, and on-site installation. The surrounding experience also included custom signage and faux cobblestone accents made with foam, aggregate, and paint."
       ],
-      capabilities: ["Environmental design", "Rapid mockups", "Custom signage", "Mixed materials", "On-site installation"],
+      capabilities: ["Environmental design", "Contractor collaboration", "Custom signage", "Mixed materials", "On-site installation"],
       tags: ["fabrication", "education", "environment", "scenic", "installation", "experience-design"]
     },
     {
@@ -144,7 +144,8 @@ window.PORTFOLIO_DATA = {
     },
     "212073": {
       title: "Thinking it through. Making it real.",
-      summary: "My approach combines User Experience (UX) thinking, visual design, and hands-on prototyping and fabrication—turning ambiguous ideas into testable digital and physical experiences.",
+      titleLines: ["Thinking it through.", "Making it real."],
+      summary: "A designer’s eye, User Experience (UX) instincts, and a prototyper’s hands—turning ambiguous ideas into testable digital and physical experiences.",
       projectIds: [
         "brown-bear-tree",
         "randall-core-samples",
