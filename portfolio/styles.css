@@ -126,43 +126,36 @@ h1 {
   align-items: center;
 }
 
-.project:nth-child(even) .project__media-grid {
+.project:nth-child(even) .project__media-slider {
   order: 2;
 }
 
-.project__media-grid {
-  display: grid;
+.project__media-slider {
+  position: relative;
   overflow: hidden;
-  aspect-ratio: 4 / 3;
-  gap: 3px;
+  aspect-ratio: 1;
   background: #dedbd3;
   border-radius: 2px;
 }
 
-.project__media-grid--1 {
-  grid-template-columns: 1fr;
-}
-
-.project__media-grid--2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.project__media-grid--3 {
-  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.project__media-grid--3 .project__media-item:first-child {
-  grid-row: 1 / -1;
+.project__media-track {
+  width: 100%;
+  height: 100%;
 }
 
 .project__media-item {
   position: relative;
+  width: 100%;
+  height: 100%;
   min-width: 0;
   min-height: 0;
   margin: 0;
   overflow: hidden;
   background: #dedbd3;
+}
+
+.project__media-item[hidden] {
+  display: none;
 }
 
 .project__media {
@@ -174,6 +167,50 @@ h1 {
 
 .project__media--contain {
   object-fit: contain;
+}
+
+.project__media--video {
+  background: var(--ink);
+  object-fit: contain;
+}
+
+.project__media-nav {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 42%);
+  border-radius: 50%;
+  background: rgb(32 33 31 / 56%);
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  place-items: center;
+  transform: translateY(-50%);
+  transition: background 160ms ease;
+}
+
+.project__media-nav:hover,
+.project__media-nav:focus-visible {
+  background: rgb(32 33 31 / 82%);
+}
+
+.project__media-nav:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.project__media-nav--previous {
+  left: 12px;
+}
+
+.project__media-nav--next {
+  right: 12px;
 }
 
 .project__media-item figcaption {
@@ -352,12 +389,8 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .project:nth-child(even) .project__media-grid {
+  .project:nth-child(even) .project__media-slider {
     order: initial;
-  }
-
-  .project__media-grid {
-    aspect-ratio: 5 / 4;
   }
 
   .related-projects {

@@ -68,12 +68,16 @@
         : [])
     ];
 
-    const mediaGrid = document.createElement("div");
-    mediaGrid.className = `project__media-grid project__media-grid--${Math.min(mediaItems.length, 3)}`;
+    const mediaSlider = document.createElement("div");
+    mediaSlider.className = "project__media-slider";
+    const mediaTrack = document.createElement("div");
+    mediaTrack.className = "project__media-track";
+    const renderedMedia = [];
 
     mediaItems.slice(0, 3).forEach((media, mediaIndex) => {
       const mediaWrap = document.createElement("figure");
       mediaWrap.className = "project__media-item";
+      mediaWrap.hidden = mediaIndex !== 0;
 
       if (media.type === "video") {
         const video = document.createElement("video");
@@ -105,8 +109,39 @@
         mediaWrap.appendChild(image);
       }
 
-      mediaGrid.appendChild(mediaWrap);
+      renderedMedia.push(mediaWrap);
+      mediaTrack.appendChild(mediaWrap);
     });
+
+    mediaSlider.appendChild(mediaTrack);
+
+    if (renderedMedia.length > 1) {
+      let activeMediaIndex = 0;
+
+      const showMedia = (nextIndex) => {
+        const currentVideo = renderedMedia[activeMediaIndex].querySelector("video");
+        if (currentVideo) currentVideo.pause();
+        renderedMedia[activeMediaIndex].hidden = true;
+        activeMediaIndex = (nextIndex + renderedMedia.length) % renderedMedia.length;
+        renderedMedia[activeMediaIndex].hidden = false;
+      };
+
+      const previousButton = document.createElement("button");
+      previousButton.className = "project__media-nav project__media-nav--previous";
+      previousButton.type = "button";
+      previousButton.setAttribute("aria-label", `Show previous media for ${project.title}`);
+      previousButton.textContent = "←";
+      previousButton.addEventListener("click", () => showMedia(activeMediaIndex - 1));
+
+      const nextButton = document.createElement("button");
+      nextButton.className = "project__media-nav project__media-nav--next";
+      nextButton.type = "button";
+      nextButton.setAttribute("aria-label", `Show next media for ${project.title}`);
+      nextButton.textContent = "→";
+      nextButton.addEventListener("click", () => showMedia(activeMediaIndex + 1));
+
+      mediaSlider.append(previousButton, nextButton);
+    }
 
     const content = document.createElement("div");
     content.className = "project__content";
@@ -144,7 +179,7 @@
       content.appendChild(capabilities);
     }
 
-    article.append(mediaGrid, content);
+    article.append(mediaSlider, content);
     fragment.appendChild(article);
   });
 
