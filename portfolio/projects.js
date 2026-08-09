@@ -143,8 +143,8 @@ window.PORTFOLIO_DATA = {
       ]
     },
     "212073": {
-      title: "Think it through. Make it real.",
-      summary: "A designer’s eye, UX instincts, and a prototyper’s hands—turning ambiguous ideas into testable digital and physical experiences.",
+      title: "Thinking it through. Making it real.",
+      summary: "My approach combines User Experience (UX) thinking, visual design, and hands-on prototyping and fabrication—turning ambiguous ideas into testable digital and physical experiences.",
       projectIds: [
         "brown-bear-tree",
         "randall-core-samples",
