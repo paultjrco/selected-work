@@ -7,6 +7,14 @@ window.PORTFOLIO_DATA = {
       status: "Completed",
       image: "portfolio/images-web/123_1 2.jpeg",
       alt: "Completed artificial tree installation framing a doorway inside a toy store",
+      media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/123_1 2.jpeg",
+          alt: "Full completed artificial tree installation, including its branching canopy, framing a doorway inside a toy store",
+          fit: "contain"
+        }
+      ],
       description: [
         "Designed and fabricated a large artificial tree environment that transforms a standard retail doorway into an immersive focal point. The modular structure combines sculpted trunks, branching canopies, nesting openings, artificial foliage, scenic texture, and layered paint to create a convincing organic form within an existing store interior.",
         "Worked closely with a general contractor while planning for scale, transport, assembly, durability, and safe installation. Materials and techniques included foam, wood, structural reinforcement, lightweight GFRC mortar, fiberglass, epoxy-based repairs, scenic painting, and integrated natural-looking branches."
@@ -21,6 +29,18 @@ window.PORTFOLIO_DATA = {
       status: "Completed",
       image: "portfolio/images-web/IMG_1381.jpg",
       alt: "Library environment with a sculpted tree, curved staircase, branch railings, and reading spaces",
+      media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/IMG_1381.jpg",
+          alt: "Cal’s Corner library environment with a sculpted tree, curved staircase, branch railings, and reading spaces"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/IMG_1396.jpg",
+          alt: "Visitors walking and gathering around the completed Cal’s Corner tree and library environment"
+        }
+      ],
       description: [
         "Created a memorial library environment centered on a fabricated tree that integrates with the architecture and wraps into the stair railings. Branches, foliage, lighting, signage, and spatial details turn an ordinary circulation area into a distinctive place for reading and gathering.",
         "Worked closely with a general contractor to coordinate the environmental design, scenic fabrication, finish work, and on-site installation. The surrounding experience also included custom signage and faux cobblestone accents made with foam, aggregate, and paint."

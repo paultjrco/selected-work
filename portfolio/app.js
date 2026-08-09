@@ -52,16 +52,61 @@
     const article = document.createElement("article");
     article.className = "project";
 
-    const imageWrap = document.createElement("div");
-    imageWrap.className = "project__image-wrap";
+    const mediaItems = project.media || [
+      {
+        type: "image",
+        src: project.image,
+        alt: project.alt
+      },
+      ...(project.video
+        ? [{
+            type: "video",
+            src: project.video,
+            poster: project.videoPoster || project.image,
+            label: project.videoLabel || "Process video"
+          }]
+        : [])
+    ];
 
-    const image = document.createElement("img");
-    image.className = "project__image";
-    image.src = project.image;
-    image.alt = project.alt;
-    image.loading = index < 2 ? "eager" : "lazy";
-    image.decoding = "async";
-    imageWrap.appendChild(image);
+    const mediaGrid = document.createElement("div");
+    mediaGrid.className = `project__media-grid project__media-grid--${Math.min(mediaItems.length, 3)}`;
+
+    mediaItems.slice(0, 3).forEach((media, mediaIndex) => {
+      const mediaWrap = document.createElement("figure");
+      mediaWrap.className = "project__media-item";
+
+      if (media.type === "video") {
+        const video = document.createElement("video");
+        video.className = "project__media project__media--video";
+        video.controls = true;
+        video.muted = true;
+        video.playsInline = true;
+        video.preload = "metadata";
+        video.poster = media.poster || "";
+
+        const source = document.createElement("source");
+        source.src = media.src;
+        source.type = "video/x-m4v";
+        video.appendChild(source);
+        mediaWrap.appendChild(video);
+
+        if (media.label) {
+          const caption = document.createElement("figcaption");
+          caption.textContent = media.label;
+          mediaWrap.appendChild(caption);
+        }
+      } else {
+        const image = document.createElement("img");
+        image.className = `project__media${media.fit === "contain" ? " project__media--contain" : ""}`;
+        image.src = media.src;
+        image.alt = media.alt || "";
+        image.loading = index < 2 && mediaIndex === 0 ? "eager" : "lazy";
+        image.decoding = "async";
+        mediaWrap.appendChild(image);
+      }
+
+      mediaGrid.appendChild(mediaWrap);
+    });
 
     const content = document.createElement("div");
     content.className = "project__content";
@@ -99,30 +144,7 @@
       content.appendChild(capabilities);
     }
 
-    if (project.video) {
-      const videoFigure = document.createElement("figure");
-      videoFigure.className = "project__video-wrap";
-
-      const video = document.createElement("video");
-      video.className = "project__video";
-      video.controls = true;
-      video.muted = true;
-      video.playsInline = true;
-      video.preload = "metadata";
-      video.poster = project.videoPoster || project.image;
-
-      const source = document.createElement("source");
-      source.src = project.video;
-      source.type = "video/x-m4v";
-      video.appendChild(source);
-
-      const caption = document.createElement("figcaption");
-      caption.textContent = project.videoLabel || "Process video";
-      videoFigure.append(video, caption);
-      content.appendChild(videoFigure);
-    }
-
-    article.append(imageWrap, content);
+    article.append(mediaGrid, content);
     fragment.appendChild(article);
   });
 
