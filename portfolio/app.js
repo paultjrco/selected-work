@@ -290,10 +290,17 @@
       content.appendChild(description);
 
       if (project.capabilities && project.capabilities.length) {
-        const capabilityText = document.createElement("p");
-        capabilityText.className = "related-project__capabilities";
-        capabilityText.textContent = project.capabilities.join(" · ");
-        content.appendChild(capabilityText);
+        const capabilities = document.createElement("ul");
+        capabilities.className = "related-project__capabilities";
+        capabilities.setAttribute("aria-label", "Relevant capabilities");
+
+        project.capabilities.forEach((capability) => {
+          const capabilityItem = document.createElement("li");
+          capabilityItem.textContent = capability;
+          capabilities.appendChild(capabilityItem);
+        });
+
+        content.appendChild(capabilities);
       }
 
       if (project.url) {
