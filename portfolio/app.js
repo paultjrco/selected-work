@@ -220,27 +220,80 @@
       const item = document.createElement("article");
       item.className = "related-project";
 
+      if (project.media && project.media.length) {
+        item.classList.add("related-project--with-media");
+
+        const mediaSlider = document.createElement("div");
+        mediaSlider.className = "related-project__media-slider";
+        const renderedMedia = [];
+
+        project.media.slice(0, 3).forEach((media, mediaIndex) => {
+          const mediaWrap = document.createElement("figure");
+          mediaWrap.className = "related-project__media-item";
+          mediaWrap.hidden = mediaIndex !== 0;
+
+          const image = document.createElement("img");
+          image.src = media.src;
+          image.alt = media.alt || "";
+          image.loading = "lazy";
+          image.decoding = "async";
+          mediaWrap.appendChild(image);
+          renderedMedia.push(mediaWrap);
+          mediaSlider.appendChild(mediaWrap);
+        });
+
+        if (renderedMedia.length > 1) {
+          let activeMediaIndex = 0;
+          const showMedia = (nextIndex) => {
+            renderedMedia[activeMediaIndex].hidden = true;
+            activeMediaIndex = (nextIndex + renderedMedia.length) % renderedMedia.length;
+            renderedMedia[activeMediaIndex].hidden = false;
+          };
+
+          const previousButton = document.createElement("button");
+          previousButton.className = "project__media-nav project__media-nav--previous";
+          previousButton.type = "button";
+          previousButton.setAttribute("aria-label", `Show previous image for ${project.title}`);
+          previousButton.textContent = "←";
+          previousButton.addEventListener("click", () => showMedia(activeMediaIndex - 1));
+
+          const nextButton = document.createElement("button");
+          nextButton.className = "project__media-nav project__media-nav--next";
+          nextButton.type = "button";
+          nextButton.setAttribute("aria-label", `Show next image for ${project.title}`);
+          nextButton.textContent = "→";
+          nextButton.addEventListener("click", () => showMedia(activeMediaIndex + 1));
+
+          mediaSlider.append(previousButton, nextButton);
+        }
+
+        item.appendChild(mediaSlider);
+      }
+
+      const content = document.createElement("div");
+      content.className = "related-project__content";
+
       const heading = document.createElement("h3");
       heading.textContent = project.title;
 
       const description = document.createElement("p");
       description.textContent = project.description;
-      item.appendChild(heading);
+      content.appendChild(heading);
 
       if (project.status) {
         const status = document.createElement("span");
-        status.className = "related-project__status";
+        status.className = `related-project__status${project.status === "Ongoing" ? " related-project__status--ongoing" : ""}`;
         status.textContent = project.status;
-        item.appendChild(status);
+        content.appendChild(status);
       }
 
-      item.appendChild(description);
+      content.appendChild(description);
 
       if (project.capabilities && project.capabilities.length) {
         const capabilityText = document.createElement("p");
         capabilityText.className = "related-project__capabilities";
         capabilityText.textContent = project.capabilities.join(" · ");
-        item.appendChild(capabilityText);
+        content.appendChild(capabilityText);
       }
 
       if (project.url) {
@@ -250,8 +303,10 @@
         link.target = "_blank";
         link.rel = "noopener noreferrer";
         link.textContent = "View case study";
-        item.appendChild(link);
+        content.appendChild(link);
       }
+
+      item.appendChild(content);
 
       relatedList.appendChild(item);
     });

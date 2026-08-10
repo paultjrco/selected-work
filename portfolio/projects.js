@@ -96,6 +96,25 @@ window.PORTFOLIO_DATA = {
   ],
   relatedProjects: [
     {
+      id: "house-number-sign",
+      title: "Custom Residential House-Number Sign",
+      status: "Completed",
+      description: "Designed and fabricated a custom dimensional house-number sign, carrying the work through digital design, CAM setup, CNC cutting, painting, and final finishing. The completed fabrication includes four concealed metal mounting rods on the back. A separate, site-specific installation method for the heavily textured exterior wall is planned and will be documented after installation.",
+      capabilities: ["CNC & CAM", "Dimensional signage", "Finish production", "Mounting design", "Site-specific problem-solving"],
+      media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/house-number-sign-front.jpg",
+          alt: "Finished white residential house-number sign with raised black numerals 32"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/house-number-sign-rear-mounting-rods.jpg",
+          alt: "Back of the house-number sign showing four metal mounting rods"
+        }
+      ]
+    },
+    {
       id: "vendor-assistant",
       title: "Vendor Assistant — Modular Engagement Touchscreen",
       status: "Ongoing",
@@ -174,6 +193,7 @@ window.PORTFOLIO_DATA = {
         "cals-corner"
       ],
       relatedProjectIds: [
+        "house-number-sign",
         "vendor-assistant",
         "ai-work-log",
         "matchwell",
