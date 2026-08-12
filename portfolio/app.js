@@ -118,29 +118,39 @@
     if (renderedMedia.length > 1) {
       let activeMediaIndex = 0;
 
+      const controls = document.createElement("div");
+      controls.className = "project__media-controls";
+
+      const position = document.createElement("span");
+      position.className = "project__media-position";
+      position.setAttribute("aria-live", "polite");
+      position.textContent = `1 / ${renderedMedia.length}`;
+
       const showMedia = (nextIndex) => {
         const currentVideo = renderedMedia[activeMediaIndex].querySelector("video");
         if (currentVideo) currentVideo.pause();
         renderedMedia[activeMediaIndex].hidden = true;
         activeMediaIndex = (nextIndex + renderedMedia.length) % renderedMedia.length;
         renderedMedia[activeMediaIndex].hidden = false;
+        position.textContent = `${activeMediaIndex + 1} / ${renderedMedia.length}`;
       };
 
       const previousButton = document.createElement("button");
       previousButton.className = "project__media-nav project__media-nav--previous";
       previousButton.type = "button";
       previousButton.setAttribute("aria-label", `Show previous media for ${project.title}`);
-      previousButton.textContent = "←";
+      previousButton.innerHTML = "<span aria-hidden=\"true\">←</span> Previous";
       previousButton.addEventListener("click", () => showMedia(activeMediaIndex - 1));
 
       const nextButton = document.createElement("button");
       nextButton.className = "project__media-nav project__media-nav--next";
       nextButton.type = "button";
       nextButton.setAttribute("aria-label", `Show next media for ${project.title}`);
-      nextButton.textContent = "→";
+      nextButton.innerHTML = "Next <span aria-hidden=\"true\">→</span>";
       nextButton.addEventListener("click", () => showMedia(activeMediaIndex + 1));
 
-      mediaSlider.append(previousButton, nextButton);
+      controls.append(previousButton, position, nextButton);
+      mediaSlider.appendChild(controls);
     }
 
     const content = document.createElement("div");
@@ -225,6 +235,8 @@
 
         const mediaSlider = document.createElement("div");
         mediaSlider.className = "related-project__media-slider";
+        const mediaTrack = document.createElement("div");
+        mediaTrack.className = "related-project__media-track";
         const renderedMedia = [];
 
         project.media.slice(0, 3).forEach((media, mediaIndex) => {
@@ -239,32 +251,45 @@
           image.decoding = "async";
           mediaWrap.appendChild(image);
           renderedMedia.push(mediaWrap);
-          mediaSlider.appendChild(mediaWrap);
+          mediaTrack.appendChild(mediaWrap);
         });
+
+        mediaSlider.appendChild(mediaTrack);
 
         if (renderedMedia.length > 1) {
           let activeMediaIndex = 0;
+
+          const controls = document.createElement("div");
+          controls.className = "project__media-controls";
+
+          const position = document.createElement("span");
+          position.className = "project__media-position";
+          position.setAttribute("aria-live", "polite");
+          position.textContent = `1 / ${renderedMedia.length}`;
+
           const showMedia = (nextIndex) => {
             renderedMedia[activeMediaIndex].hidden = true;
             activeMediaIndex = (nextIndex + renderedMedia.length) % renderedMedia.length;
             renderedMedia[activeMediaIndex].hidden = false;
+            position.textContent = `${activeMediaIndex + 1} / ${renderedMedia.length}`;
           };
 
           const previousButton = document.createElement("button");
           previousButton.className = "project__media-nav project__media-nav--previous";
           previousButton.type = "button";
           previousButton.setAttribute("aria-label", `Show previous image for ${project.title}`);
-          previousButton.textContent = "←";
+          previousButton.innerHTML = "<span aria-hidden=\"true\">←</span> Previous";
           previousButton.addEventListener("click", () => showMedia(activeMediaIndex - 1));
 
           const nextButton = document.createElement("button");
           nextButton.className = "project__media-nav project__media-nav--next";
           nextButton.type = "button";
           nextButton.setAttribute("aria-label", `Show next image for ${project.title}`);
-          nextButton.textContent = "→";
+          nextButton.innerHTML = "Next <span aria-hidden=\"true\">→</span>";
           nextButton.addEventListener("click", () => showMedia(activeMediaIndex + 1));
 
-          mediaSlider.append(previousButton, nextButton);
+          controls.append(previousButton, position, nextButton);
+          mediaSlider.appendChild(controls);
         }
 
         item.appendChild(mediaSlider);
