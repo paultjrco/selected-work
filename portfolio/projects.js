@@ -90,6 +90,17 @@ window.PORTFOLIO_DATA = {
         },
         {
           type: "image",
+          src: "portfolio/images-web/IMG_1371.jpg",
+          alt: "Interior of the Cal’s Corner structure showing its curved rooms, passageways, table, lighting, and architectural details",
+          fit: "contain"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/IMG_1398.jpg",
+          alt: "A crowd exploring, gathering around, and photographing the completed Cal’s Corner library structure"
+        },
+        {
+          type: "image",
           src: "portfolio/images-web/cals-corner-height-access-sign.png",
           alt: "Yellow and black Cal’s Corner acrylic sign stating that visitors must be four feet three inches or shorter to access the top floor",
           fit: "contain"
