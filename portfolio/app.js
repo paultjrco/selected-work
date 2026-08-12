@@ -74,7 +74,7 @@
     mediaTrack.className = "project__media-track";
     const renderedMedia = [];
 
-    mediaItems.slice(0, 3).forEach((media, mediaIndex) => {
+    mediaItems.slice(0, 5).forEach((media, mediaIndex) => {
       const mediaWrap = document.createElement("figure");
       mediaWrap.className = "project__media-item";
       mediaWrap.hidden = mediaIndex !== 0;

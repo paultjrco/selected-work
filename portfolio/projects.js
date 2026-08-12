@@ -87,11 +87,23 @@ window.PORTFOLIO_DATA = {
           type: "image",
           src: "portfolio/images-web/IMG_1396.jpg",
           alt: "Visitors walking and gathering around the completed Cal’s Corner tree and library environment"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/cals-corner-height-access-sign.png",
+          alt: "Yellow and black Cal’s Corner acrylic sign stating that visitors must be four feet three inches or shorter to access the top floor",
+          fit: "contain"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/cals-corner-do-not-touch-sign.png",
+          alt: "Yellow and black Cal’s Corner acrylic sign asking visitors not to touch the tree or branches",
+          fit: "contain"
         }
       ],
       description: [
         "Created a memorial library environment centered on a fabricated tree that integrates with the architecture and wraps into the stair railings. Branches, foliage, lighting, signage, and spatial details turn an ordinary circulation area into a distinctive place for reading and gathering.",
-        "Worked closely with a general contractor to coordinate the environmental design, scenic fabrication, finish work, and on-site installation. I also took the custom acrylic signage from design and printing through production onto acrylic and acrylic cutting, and created faux cobblestone accents using foam, aggregate, and paint."
+        "Worked closely with a general contractor to coordinate the environmental design, scenic fabrication, finish work, and on-site installation. I designed and handmade the custom safety and access signage, taking it through printing, production onto acrylic, acrylic cutting, and mounting on the structure. I also created faux cobblestone accents using foam, aggregate, and paint."
       ],
       capabilities: ["Environmental design", "Contractor collaboration", "Acrylic signage", "Mixed materials", "On-site installation"],
       tags: ["fabrication", "education", "environment", "scenic", "installation", "experience-design"]
