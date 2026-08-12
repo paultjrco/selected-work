@@ -177,6 +177,39 @@ window.PORTFOLIO_DATA = {
       status: "Completed",
       image: "portfolio/images-web/IMG_3812.jpg",
       alt: "CNC-cut components for a climate progress thermometer display arranged on a work surface",
+      media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/climate-progress-event-context.jpg",
+          alt: "Climate Progress display installed at a busy outdoor community event, showing its scale and visibility among tables and attendees",
+          fit: "contain"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/climate-progress-people-around.jpg",
+          alt: "Event attendees gathering and talking beside the installed Climate Progress display"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/IMG_3812.jpg",
+          alt: "CNC-cut components for a climate progress thermometer display arranged on a work surface"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/climate-progress-finished-identity.jpg",
+          alt: "Finished round dimensional identity mark for the Climate Progress event display"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/climate-progress-dimensional-2026.jpg",
+          alt: "Finished dimensional 2026 date component mounted on a dark arrow-shaped panel"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/climate-progress-cnc-logo-process.jpg",
+          alt: "CNC-routed circular logo blank showing recessed paths before painting and final assembly"
+        }
+      ],
       description: [
         "Designed and fabricated a large physical progress display for a climate-focused community event. The visual system turns data into an approachable environmental graphic using a thermometer metaphor, dimensional typography, a custom identity mark, and a clear progress indicator.",
         "The project combined graphic design with CNC-ready layouts, dimensional component fabrication, typography, painting, assembly, and physical presentation—moving from digital files to a legible, event-scale artifact."
