@@ -61,6 +61,26 @@ window.PORTFOLIO_DATA = {
           src: "portfolio/images-web/123_1 2.jpeg",
           alt: "Full completed artificial tree installation, including its branching canopy, framing a doorway inside a toy store",
           fit: "contain"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/faux-tree-bark-texture-process.jpg",
+          alt: "Close-up craftsmanship study of hand-tooled bark texture created for the faux tree surface"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/faux-tree-structural-scenic-process.jpg",
+          alt: "Faux tree trunk section during fabrication showing the integrated opening, branch structure, and hand-textured scenic surface"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/faux-tree-modular-trunks-process.jpg",
+          alt: "Paired modular faux tree trunk sections during scenic fabrication before final transport and installation"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/faux-tree-base-detail-process.jpg",
+          alt: "Finished faux tree base detail with textured bark, sculpted roots and rocks, moss, and planted accents"
         }
       ],
       description: [
