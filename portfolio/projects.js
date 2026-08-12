@@ -1,6 +1,54 @@
 window.PORTFOLIO_DATA = {
   projects: [
     {
+      id: "dayspring-events",
+      title: "Events, Wayfinding & Environmental Graphics",
+      context: "Dayspring Partners · Workplace and event experience design",
+      status: "Completed",
+      image: "portfolio/images-web/dayspring-events-scope.svg",
+      alt: "Scope overview for Dayspring events and environmental graphics work",
+      media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/dayspring-events-scope.svg",
+          alt: "Portfolio presentation graphic listing visitor wayfinding, digital signage, event collateral, and vendor coordination",
+          fit: "contain"
+        }
+      ],
+      description: [
+        "Designed coordinated environmental and event communications for Dayspring Partners, including visitor wayfinding across rooms and program locations, digital signage and self-running animations, reception and booth graphics, registration badges, invitations, and other branded touchpoints.",
+        "For a company event serving approximately 200 guests, coordinated printing, photo-booth, food, and other vendors while managing the visual details across physical and digital formats. Additional work included a projected office-history timeline, projector rigging, and interactive guest experiences. The image shown is a portfolio scope overview rather than documentary event photography."
+      ],
+      capabilities: ["Wayfinding", "Environmental graphics", "Adobe Creative Suite", "Production artwork", "Vendor coordination"],
+      tags: ["signage", "wayfinding", "environmental-graphics", "event-design", "production", "vendors"]
+    },
+    {
+      id: "house-number-signage",
+      title: "Custom Residential House-Number Sign",
+      context: "Private residence · Dimensional signage design and fabrication",
+      status: "Completed",
+      image: "portfolio/images-web/house-number-sign-front.jpg",
+      alt: "Finished white residential house-number sign with raised black numerals 32",
+      media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/house-number-sign-front.jpg",
+          alt: "Finished white residential house-number sign with raised black numerals 32"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/house-number-sign-rear-mounting-rods.jpg",
+          alt: "Back of the house-number sign showing four metal mounting rods"
+        }
+      ],
+      description: [
+        "Designed and fabricated a custom dimensional house-number sign, taking the work through digital design, CAM setup, CNC cutting, dimensional assembly, painting, and final finishing.",
+        "The completed fabrication includes four concealed metal mounting rods. Because the destination wall is heavily textured and uneven, I developed a site-specific guide-board and rod-alignment approach for the later installation phase; installation is not included in the current completion claim."
+      ],
+      capabilities: ["CNC & CAM", "Dimensional signage", "Finish production", "Mounting design", "Site problem-solving"],
+      tags: ["signage", "cnc", "cam", "fabrication", "finishing", "installation-planning"]
+    },
+    {
       id: "brown-bear-tree",
       title: "Faux Tree Retail Environment",
       context: "Brown Bear Toys · Experiential fabrication",
@@ -199,6 +247,22 @@ window.PORTFOLIO_DATA = {
         "matchwell",
         "field-guides",
         "family-health-tracker"
+      ]
+    },
+    "276818": {
+      title: "Clear spaces. Strong signals.",
+      titleLines: ["Clear spaces.", "Strong signals."],
+      summary: "Environmental graphics shaped from concept through production—combining wayfinding, typography, fabrication knowledge, vendor coordination, and hands-on installation experience.",
+      projectIds: [
+        "climate-progress",
+        "dayspring-events",
+        "cals-corner",
+        "house-number-signage",
+        "brown-bear-tree"
+      ],
+      relatedProjectIds: [
+        "field-guides",
+        "matchwell"
       ]
     }
   }

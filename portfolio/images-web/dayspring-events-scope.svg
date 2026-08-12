@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Dayspring events and environmental graphics scope overview</title>
+  <desc id="desc">A typographic portfolio cover listing wayfinding, digital signage, event collateral, and vendor coordination.</desc>
+  <rect width="1200" height="1200" fill="#e9e5dc"/>
+  <path d="M120 150h960M120 1050h960" stroke="#b7b0a4" stroke-width="2"/>
+  <text x="120" y="245" fill="#9a452d" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="5">SCOPE OVERVIEW</text>
+  <text x="120" y="365" fill="#20211f" font-family="Georgia, Times New Roman, serif" font-size="72">Dayspring Events</text>
+  <text x="120" y="445" fill="#20211f" font-family="Georgia, Times New Roman, serif" font-size="72">&amp; Environmental Graphics</text>
+  <g fill="#454741" font-family="Arial, Helvetica, sans-serif" font-size="38">
+    <text x="160" y="610">Visitor wayfinding</text>
+    <text x="160" y="700">Digital signage</text>
+    <text x="160" y="790">Event collateral</text>
+    <text x="160" y="880">Vendor coordination</text>
+  </g>
+  <g fill="#9a452d">
+    <circle cx="125" cy="597" r="9"/><circle cx="125" cy="687" r="9"/>
+    <circle cx="125" cy="777" r="9"/><circle cx="125" cy="867" r="9"/>
+  </g>
+  <text x="120" y="1110" fill="#666860" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="2">PORTFOLIO PRESENTATION GRAPHIC</text>
+</svg>
