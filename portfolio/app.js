@@ -50,6 +50,10 @@
 
   if (presentation) {
     document.title = `${presentation.title} — Paul Tomanpos, Jr.`;
+    const introEyebrow = document.querySelector(".intro .eyebrow");
+    introEyebrow.textContent = presentation.audience
+      ? `Selected work · ${presentation.audience}`
+      : "Selected work";
     const portfolioTitle = document.getElementById("portfolio-title");
     if (presentation.titleLines) {
       const titleLines = presentation.titleLines.map((line) => {

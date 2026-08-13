@@ -413,6 +413,7 @@ window.PORTFOLIO_DATA = {
     "212073": {
       title: "Thinking it through. Making it real.",
       titleLines: ["Thinking it through.", "Making it real."],
+      audience: "Aquent · Retail Store Design Prototyper",
       summary: "A designer’s eye, User Experience (UX) instincts, and a prototyper’s hands—turning ambiguous ideas into testable digital and physical experiences.",
       projectIds: [
         "brown-bear-tree",
@@ -435,6 +436,7 @@ window.PORTFOLIO_DATA = {
     "276818": {
       title: "Clear spaces. Strong signals.",
       titleLines: ["Clear spaces.", "Strong signals."],
+      audience: "Tesla · Signs & Graphics Designer",
       summary: "Environmental graphics shaped from concept through production—combining wayfinding, typography, fabrication knowledge, vendor coordination, and hands-on installation experience.",
       projectIds: [
         "climate-progress",
@@ -451,6 +453,7 @@ window.PORTFOLIO_DATA = {
     "5413336": {
       title: "Built to engage. Repaired to last.",
       titleLines: ["Built to engage.", "Repaired to last."],
+      audience: "East Bay Regional Park District · Exhibit Designer",
       summary: "Exhibit design grounded in hands-on troubleshooting, mechanical prototyping, woodworking, graphic production, careful finishing, and the long-term care of public experiences.",
       projectIds: [
         "randall-core-samples",
@@ -468,6 +471,7 @@ window.PORTFOLIO_DATA = {
     "42dot": {
       title: "Physical systems. Digital intelligence.",
       titleLines: ["Physical systems.", "Digital intelligence."],
+      audience: "42dot · Senior Prototype Engineer",
       summary: "Multidisciplinary prototyping across mechanical interactions, CAD and 3D printing, digital UX, embedded-hardware concepts, hands-on fabrication, and rapid system validation.",
       projectIds: [
         "randall-core-samples",
