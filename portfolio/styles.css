@@ -119,16 +119,14 @@ h1 {
   right: clamp(-28px, -2vw, -8px);
   display: flex;
   width: min(73.5%, 795px);
-  max-height: 450px;
   flex-wrap: wrap;
   gap: clamp(5px, 0.75vw, 10px) clamp(9px, 1.15vw, 16px);
   align-content: flex-start;
   align-items: baseline;
   justify-content: flex-end;
-  overflow: hidden;
+  overflow: visible;
   color: var(--accent);
   line-height: 1;
-  mask-image: linear-gradient(105deg, transparent 0%, black 30%, black 88%, transparent 100%);
   opacity: 0.18;
   pointer-events: none;
   text-align: right;
@@ -145,6 +143,7 @@ h1 {
   opacity: var(--term-opacity);
   transform: translate(var(--term-shift-x), var(--term-shift-y)) scale(var(--term-scale));
   transform-origin: center;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 
@@ -516,7 +515,6 @@ h1 {
     top: 34px;
     right: -8px;
     width: 92%;
-    max-height: 225px;
     gap: 5px 9px;
     opacity: 0.12;
   }
