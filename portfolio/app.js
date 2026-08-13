@@ -68,7 +68,6 @@
     wordCloud.className = "intro__word-cloud";
     wordCloud.setAttribute("aria-hidden", "true");
     const scalePattern = [1.22, 0.86, 1.48, 1.02, 1.3, 0.78, 1.12, 1.58, 0.92, 1.38];
-    const rotatePattern = [-2.4, 1.2, -0.8, 2, -1.5, 0.6, 2.5, -1.1, 1.7, -2];
     const horizontalPattern = [-8, 5, -2, 9, -5, 3, -10, 7, -4, 6];
     const verticalPattern = [2, -5, 6, -2, 4, -7, 1, 7, -4, 3];
     const opacityPattern = [0.92, 0.68, 1, 0.8, 0.9, 0.62, 0.84, 0.96, 0.72, 0.88];
@@ -82,7 +81,6 @@
         word.textContent = term.label;
         word.style.setProperty("--term-score", Math.min(term.score, 5));
         word.style.setProperty("--term-scale", scalePattern[index % scalePattern.length]);
-        word.style.setProperty("--term-rotate", `${rotatePattern[index % rotatePattern.length]}deg`);
         word.style.setProperty("--term-shift-x", `${horizontalPattern[index % horizontalPattern.length]}px`);
         word.style.setProperty("--term-shift-y", `${verticalPattern[index % verticalPattern.length]}px`);
         word.style.setProperty("--term-opacity", opacityPattern[index % opacityPattern.length]);
