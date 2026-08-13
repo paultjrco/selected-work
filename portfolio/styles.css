@@ -64,8 +64,14 @@ main,
 }
 
 .intro {
-  max-width: 880px;
+  position: relative;
+  isolation: isolate;
   padding: clamp(72px, 12vw, 148px) 0 clamp(64px, 9vw, 108px);
+}
+
+.intro > :not(.intro__word-cloud) {
+  position: relative;
+  z-index: 1;
 }
 
 .eyebrow,
@@ -104,6 +110,44 @@ h1 {
   color: var(--muted);
   font-size: clamp(1.1rem, 2vw, 1.42rem);
   line-height: 1.55;
+}
+
+.intro__word-cloud {
+  position: absolute;
+  z-index: 0;
+  top: clamp(42px, 7vw, 82px);
+  right: clamp(-28px, -2vw, -8px);
+  display: flex;
+  width: min(49%, 530px);
+  max-height: 300px;
+  flex-wrap: wrap;
+  gap: clamp(5px, 0.75vw, 10px) clamp(9px, 1.15vw, 16px);
+  align-content: flex-start;
+  align-items: baseline;
+  justify-content: flex-end;
+  overflow: hidden;
+  color: var(--accent);
+  line-height: 1;
+  mask-image: linear-gradient(105deg, transparent 0%, black 30%, black 88%, transparent 100%);
+  opacity: 0.18;
+  pointer-events: none;
+  text-align: right;
+  user-select: none;
+}
+
+.intro__word-cloud-term {
+  font-size: clamp(0.64rem, calc(0.54rem + var(--term-score) * 0.22vw), 1.12rem);
+  font-weight: calc(430 + var(--term-score) * 65);
+  letter-spacing: calc(0.02em + (5 - var(--term-score)) * 0.012em);
+  white-space: nowrap;
+}
+
+.intro__word-cloud-term:nth-child(3n + 2) {
+  color: var(--ink);
+}
+
+.intro__word-cloud-term:nth-child(4n) {
+  transform: translateY(3px);
 }
 
 .projects {
@@ -464,6 +508,19 @@ h1 {
 
   .project {
     grid-template-columns: 1fr;
+  }
+
+  .intro__word-cloud {
+    top: 34px;
+    right: -8px;
+    width: 68%;
+    max-height: 150px;
+    gap: 5px 9px;
+    opacity: 0.12;
+  }
+
+  .intro__word-cloud-term {
+    font-size: clamp(0.56rem, calc(0.5rem + var(--term-score) * 0.32vw), 0.86rem);
   }
 
   .project:nth-child(even) {

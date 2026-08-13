@@ -24,6 +24,30 @@
     ? collection || defaultCollection
     : null;
 
+  const cloudTerms = new Map();
+  const addCloudTerms = (projects, weight) => {
+    projects.forEach((project) => {
+      (project.capabilities || []).forEach((capability) => {
+        const key = capability.toLocaleLowerCase();
+        const existing = cloudTerms.get(key);
+        cloudTerms.set(key, {
+          label: existing ? existing.label : capability,
+          score: (existing ? existing.score : 0) + weight
+        });
+      });
+    });
+  };
+
+  addCloudTerms(selectedProjects, 2);
+
+  if (collection && collection.relatedProjectIds) {
+    const relatedById = new Map((data.relatedProjects || []).map((project) => [project.id, project]));
+    addCloudTerms(
+      collection.relatedProjectIds.map((id) => relatedById.get(id)).filter(Boolean),
+      1
+    );
+  }
+
   if (presentation) {
     document.title = `${presentation.title} — Paul Tomanpos, Jr.`;
     const portfolioTitle = document.getElementById("portfolio-title");
@@ -39,6 +63,23 @@
       portfolioTitle.textContent = presentation.title;
     }
     document.getElementById("portfolio-summary").textContent = presentation.summary;
+
+    const wordCloud = document.createElement("div");
+    wordCloud.className = "intro__word-cloud";
+    wordCloud.setAttribute("aria-hidden", "true");
+
+    [...cloudTerms.values()]
+      .sort((a, b) => b.score - a.score || a.label.localeCompare(b.label))
+      .slice(0, 20)
+      .forEach((term) => {
+        const word = document.createElement("span");
+        word.className = "intro__word-cloud-term";
+        word.textContent = term.label;
+        word.style.setProperty("--term-score", Math.min(term.score, 5));
+        wordCloud.appendChild(word);
+      });
+
+    document.querySelector(".intro").appendChild(wordCloud);
   } else {
     document.title = "Portfolio link incomplete — Paul Tomanpos, Jr.";
     document.getElementById("portfolio-title").textContent = "This portfolio link is incomplete.";
