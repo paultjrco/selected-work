@@ -340,6 +340,21 @@ window.PORTFOLIO_DATA = {
         "field-guides",
         "matchwell"
       ]
+    },
+    "5413336": {
+      title: "Built to engage. Repaired to last.",
+      titleLines: ["Built to engage.", "Repaired to last."],
+      summary: "Exhibit design grounded in hands-on troubleshooting, mechanical prototyping, woodworking, graphic production, careful finishing, and the long-term care of public experiences.",
+      projectIds: [
+        "randall-core-samples",
+        "asian-art-seating",
+        "cals-corner",
+        "brown-bear-tree",
+        "climate-progress"
+      ],
+      relatedProjectIds: [
+        "house-number-sign"
+      ]
     }
   }
 };
