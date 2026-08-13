@@ -148,7 +148,11 @@ h1 {
 }
 
 .intro__word-cloud-term:nth-child(3n + 2) {
-  color: var(--ink);
+  color: #7b523f;
+}
+
+.intro__word-cloud-term:nth-child(5n) {
+  color: #b56d4d;
 }
 
 .projects {
