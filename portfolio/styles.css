@@ -66,7 +66,7 @@ main,
 .site-header__audience {
   max-width: 440px;
   margin: 0 0 0 auto;
-  color: var(--accent);
+  color: #666861;
   font-size: 0.74rem;
   font-weight: 750;
   letter-spacing: 0.1em;
@@ -139,7 +139,7 @@ h1 {
   overflow: visible;
   color: var(--accent);
   line-height: 1;
-  opacity: 0.18;
+  opacity: 0.14;
   pointer-events: none;
   text-align: right;
   user-select: none;
@@ -160,11 +160,11 @@ h1 {
 }
 
 .intro__word-cloud-term:nth-child(3n + 2) {
-  color: #7b523f;
+  color: #3f413d;
 }
 
 .intro__word-cloud-term:nth-child(5n) {
-  color: #b56d4d;
+  color: #8b8d87;
 }
 
 .projects {
@@ -541,7 +541,7 @@ h1 {
     right: -8px;
     width: 92%;
     gap: 5px 9px;
-    opacity: 0.12;
+    opacity: 0.09;
   }
 
   .intro__word-cloud-term {
