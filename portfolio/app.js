@@ -139,14 +139,14 @@
       previousButton.className = "project__media-nav project__media-nav--previous";
       previousButton.type = "button";
       previousButton.setAttribute("aria-label", `Show previous media for ${project.title}`);
-      previousButton.innerHTML = "<span aria-hidden=\"true\">←</span> Previous";
+      previousButton.innerHTML = "<span aria-hidden=\"true\">←</span>";
       previousButton.addEventListener("click", () => showMedia(activeMediaIndex - 1));
 
       const nextButton = document.createElement("button");
       nextButton.className = "project__media-nav project__media-nav--next";
       nextButton.type = "button";
       nextButton.setAttribute("aria-label", `Show next media for ${project.title}`);
-      nextButton.innerHTML = "Next <span aria-hidden=\"true\">→</span>";
+      nextButton.innerHTML = "<span aria-hidden=\"true\">→</span>";
       nextButton.addEventListener("click", () => showMedia(activeMediaIndex + 1));
 
       controls.append(previousButton, position, nextButton);
@@ -278,14 +278,14 @@
           previousButton.className = "project__media-nav project__media-nav--previous";
           previousButton.type = "button";
           previousButton.setAttribute("aria-label", `Show previous image for ${project.title}`);
-          previousButton.innerHTML = "<span aria-hidden=\"true\">←</span> Previous";
+          previousButton.innerHTML = "<span aria-hidden=\"true\">←</span>";
           previousButton.addEventListener("click", () => showMedia(activeMediaIndex - 1));
 
           const nextButton = document.createElement("button");
           nextButton.className = "project__media-nav project__media-nav--next";
           nextButton.type = "button";
           nextButton.setAttribute("aria-label", `Show next image for ${project.title}`);
-          nextButton.innerHTML = "Next <span aria-hidden=\"true\">→</span>";
+          nextButton.innerHTML = "<span aria-hidden=\"true\">→</span>";
           nextButton.addEventListener("click", () => showMedia(activeMediaIndex + 1));
 
           controls.append(previousButton, position, nextButton);

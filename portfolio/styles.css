@@ -177,15 +177,22 @@ h1 {
 }
 
 .project__media-nav {
-  min-width: 108px;
-  padding: 10px 14px;
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 42px;
+  width: 42px;
+  min-width: 42px;
+  max-width: 42px;
+  height: 42px;
+  min-height: 42px;
+  padding: 0;
   border: 1px solid #b8b5ad;
   border-radius: 999px;
   background: white;
   color: var(--ink);
   cursor: pointer;
   font: inherit;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 750;
   line-height: 1;
   transition: background 160ms ease, border-color 160ms ease;

@@ -64,6 +64,17 @@ window.PORTFOLIO_DATA = {
         },
         {
           type: "image",
+          src: "portfolio/images-web/faux-tree-concept-sketch.jpg",
+          alt: "Early hand-drawn concept sketch showing the twin-trunk faux tree, canopy, openings, and branching composition",
+          fit: "contain"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/faux-tree-full-structure-process.jpg",
+          alt: "Full faux tree structure under fabrication, showing the modular trunks, branching canopy, and hand-built scenic surfaces"
+        },
+        {
+          type: "image",
           src: "portfolio/images-web/faux-tree-bark-texture-process.jpg",
           alt: "Close-up craftsmanship study of hand-tooled bark texture created for the faux tree surface"
         },
@@ -81,6 +92,11 @@ window.PORTFOLIO_DATA = {
           type: "image",
           src: "portfolio/images-web/faux-tree-base-detail-process.jpg",
           alt: "Finished faux tree base detail with textured bark, sculpted roots and rocks, moss, and planted accents"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/faux-tree-finished-wide.jpg",
+          alt: "Wide finished view of the faux tree framing the retail doorway, including both trunks and the complete leafy canopy"
         }
       ],
       description: [
@@ -146,9 +162,34 @@ window.PORTFOLIO_DATA = {
       status: "Ongoing",
       image: "portfolio/images-web/IMG_1652.jpg",
       alt: "White 3D-printed drum, gears, shafts, and support frame installed in the Core Samples exhibit cavity",
-      video: "portfolio/videos-web/randall-core-samples-mechanism.m4v",
-      videoPoster: "portfolio/images-web/IMG_0621-video-poster.jpg",
-      videoLabel: "CAD mechanism study",
+      media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/IMG_1652.jpg",
+          alt: "White 3D-printed drum, gears, shafts, and support frame installed in the Core Samples exhibit cavity"
+        },
+        {
+          type: "video",
+          src: "portfolio/videos-web/randall-core-samples-mechanism.m4v",
+          poster: "portfolio/images-web/IMG_0621-video-poster.jpg",
+          label: "CAD mechanism study"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/randall-core-samples-prototype-overview.jpg",
+          alt: "Bench prototype overview showing the exhibit lift assembly and a 3D-printed drum-and-cable mechanism"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/randall-core-samples-lift-prototype.jpg",
+          alt: "Close view of the manually powered lift prototype with 3D-printed guides, cable routing, tube, and linear actuator"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/randall-core-samples-mechanism-assembly.jpg",
+          alt: "Top view of the assembled Core Samples lift prototype showing its actuator, cable path, printed brackets, and plywood frame"
+        }
+      ],
       description: [
         "Leading an ongoing redesign of an interactive geology exhibit whose original electronic mechanism became unreliable. The new direction uses a durable, manually powered system that converts rotational input into vertical movement so visitors can explore representations of San Francisco’s geological layers.",
         "Fusion 360, Cura, and FDM 3D printing support rapid iteration of the gearbox, lifting components, ratcheting mechanism, and magnetic slip clutch. The work remains in development; prototypes are being evaluated for mechanical efficiency, visitor interaction, maintainability, and long-term reliability."
@@ -169,6 +210,42 @@ window.PORTFOLIO_DATA = {
       ],
       capabilities: ["Precision woodworking", "Production coordination", "MDF fabrication", "Surface finishing", "Transport"],
       tags: ["museum", "fabrication", "woodworking", "finishing", "installation", "production"]
+    },
+    {
+      id: "asian-art-installations",
+      title: "Immersive Exhibition Installation",
+      context: "Asian Art Museum · Exhibition preparation and installation",
+      status: "Completed",
+      image: "portfolio/images-web/asian-art-rave-into-future-floor.jpg",
+      alt: "Visitors experiencing the completed Rave Into the Future robotic floor installation",
+      media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/asian-art-rave-into-future-floor.jpg",
+          alt: "Visitors experiencing the completed Rave Into the Future modular floor with robotic vacuum devices"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/asian-art-red-thread-installation.jpg",
+          alt: "Red-thread installation for Chiharu Shiota: Two Home Countries under construction with a preparator working among the woven lines"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/asian-art-suspended-line-installation.jpg",
+          alt: "Completed suspended-line installation for Chiharu Shiota: Two Home Countries hanging from fabricated partial-ceiling panels"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/asian-art-gala-scenic-boulders.jpg",
+          alt: "Asian Art Museum Gala stair environment with fabricated organic boulders and moss at the foot of the drapery"
+        }
+      ],
+      description: [
+        "Contributed hands-on woodworking, scenic fabrication, preparation, and installation across multiple Asian Art Museum environments. For Rave Into the Future, cut large MDF panels and helped build a modular floor that could move from the woodshop to the presentation level in sections; installed the robotic-vacuum charging bays and later helped dismantle the floor systematically with a circular saw.",
+        "For Chiharu Shiota: Two Home Countries, worked alongside the artist and studio team to produce the large red-thread weave after priming and painting the room and installing exit signage. Fabricated wood panels for the exhibition’s suspended-line installation, helped engineer the partial ceiling’s suspension with eye hooks, cable, and cable grippers, used scissor lifts and hand tools for installation, and precisely cut and heat-finished the lines to a consistent distance above the floor. The major exhibition welcomed more than 66,000 guests, exceeded attendance goals, and drew approximately twice the museum attendance of the comparable period a year earlier. For the museum gala, shaped and fabricated organic boulders and moss at the base of the stair drapery."
+      ],
+      capabilities: ["Exhibition installation", "Modular woodworking", "Scissor-lift work", "Artist collaboration", "Scenic fabrication"],
+      tags: ["museum", "installation", "woodworking", "fabrication", "artist-collaboration", "production"]
     },
     {
       id: "climate-progress",
@@ -219,6 +296,20 @@ window.PORTFOLIO_DATA = {
     }
   ],
   relatedProjects: [
+    {
+      id: "modular-wedding-arch",
+      title: "Modular Wedding Arch & Backdrop",
+      status: "Completed · Reused across multiple events",
+      description: "Designed and fabricated a hardwood wedding arch/backdrop that gives florists a stable structure for flowers and drapery. Developed the frame for repeated assembly, disassembly, and transport using threaded inserts and tee nuts so its fasteners can be removed many times without degrading the wood; finished and sealed the hardwood with stain. The system has been used successfully at multiple weddings.",
+      capabilities: ["Modular design", "Hardwood fabrication", "Reusable joinery", "Transport planning", "Finish work"],
+      media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/modular-wedding-arch-joinery.jpg",
+          alt: "Corner of the modular hardwood wedding arch showing its bracing and reusable bolted joinery"
+        }
+      ]
+    },
     {
       id: "house-number-sign",
       title: "Custom Residential House-Number Sign",
@@ -291,6 +382,7 @@ window.PORTFOLIO_DATA = {
       summary: "Selected museum, educational, and interactive work shaped through prototyping, fabrication, and careful installation.",
       projectIds: [
         "randall-core-samples",
+        "asian-art-installations",
         "asian-art-seating",
         "cals-corner"
       ]
@@ -300,6 +392,7 @@ window.PORTFOLIO_DATA = {
       summary: "Hands-on work spanning scenic construction, woodworking, dimensional graphics, finishing, and installation.",
       projectIds: [
         "brown-bear-tree",
+        "asian-art-installations",
         "asian-art-seating",
         "climate-progress",
         "cals-corner"
@@ -312,12 +405,14 @@ window.PORTFOLIO_DATA = {
       projectIds: [
         "brown-bear-tree",
         "randall-core-samples",
+        "asian-art-installations",
         "climate-progress",
         "asian-art-seating",
         "cals-corner"
       ],
       relatedProjectIds: [
         "house-number-sign",
+        "modular-wedding-arch",
         "vendor-assistant",
         "ai-work-log",
         "matchwell",
@@ -347,13 +442,15 @@ window.PORTFOLIO_DATA = {
       summary: "Exhibit design grounded in hands-on troubleshooting, mechanical prototyping, woodworking, graphic production, careful finishing, and the long-term care of public experiences.",
       projectIds: [
         "randall-core-samples",
+        "asian-art-installations",
         "asian-art-seating",
         "cals-corner",
         "brown-bear-tree",
         "climate-progress"
       ],
       relatedProjectIds: [
-        "house-number-sign"
+        "house-number-sign",
+        "modular-wedding-arch"
       ]
     }
   }
