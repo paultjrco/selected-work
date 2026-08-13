@@ -464,6 +464,23 @@ window.PORTFOLIO_DATA = {
         "house-number-sign",
         "modular-wedding-arch"
       ]
+    },
+    "42dot": {
+      title: "Physical systems. Digital intelligence.",
+      titleLines: ["Physical systems.", "Digital intelligence."],
+      summary: "Multidisciplinary prototyping across mechanical interactions, CAD and 3D printing, digital UX, embedded-hardware concepts, hands-on fabrication, and rapid system validation.",
+      projectIds: [
+        "randall-core-samples",
+        "asian-art-installations",
+        "brown-bear-tree",
+        "asian-art-seating"
+      ],
+      relatedProjectIds: [
+        "vendor-assistant",
+        "ai-work-log",
+        "matchwell",
+        "family-health-tracker"
+      ]
     }
   }
 };
