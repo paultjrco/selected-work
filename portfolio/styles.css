@@ -138,9 +138,10 @@ h1 {
 .intro__word-cloud-term {
   position: relative;
   margin-inline: -2px;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: clamp(0.96rem, calc(0.81rem + var(--term-score) * 0.33vw), 1.68rem);
   font-weight: 400;
-  letter-spacing: calc(-0.01em + (5 - var(--term-score)) * 0.01em);
+  letter-spacing: 0.012em;
   opacity: var(--term-opacity);
   transform: translate(var(--term-shift-x), var(--term-shift-y)) scale(var(--term-scale));
   transform-origin: center;
