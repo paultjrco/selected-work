@@ -200,12 +200,24 @@ window.PORTFOLIO_DATA = {
     {
       id: "asian-art-seating",
       title: "Modular Gallery Seating",
-      context: "Asian Art Museum · Exhibit preparation and fabrication",
+      context: "Asian Art Museum · Rave Into the Future",
       status: "Completed",
       image: "portfolio/images-web/IMG_3006.jpg",
       alt: "Finished arrangement of modular black and gray gallery seating platforms",
+      media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/IMG_3006.jpg",
+          alt: "Finished arrangement of modular black and gray gallery seating platforms for Rave Into the Future"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/asian-art-modular-seating-woodshop.jpg",
+          alt: "Multiple MDF gallery seating components for Rave Into the Future under fabrication and seam filling in the Asian Art Museum woodshop"
+        }
+      ],
       description: [
-        "Fabricated and finished modular gallery seating and display components to museum exhibition standards. My work moved from accurately cut MDF parts through assembly, seam filling, detailed sanding, priming, painting, and transport.",
+        "Fabricated and finished modular gallery seating and display components for the Rave Into the Future exhibition. My work moved from accurately cut MDF parts through assembly, seam filling, detailed sanding, priming, painting, and transport.",
         "Production emphasized consistency across repeated components, clean public-facing surfaces, careful handling, and close coordination with preparators and exhibit designers under an active exhibition-production schedule."
       ],
       capabilities: ["Precision woodworking", "Production coordination", "MDF fabrication", "Surface finishing", "Transport"],
@@ -241,7 +253,7 @@ window.PORTFOLIO_DATA = {
         }
       ],
       description: [
-        "Contributed hands-on woodworking, scenic fabrication, preparation, and installation across multiple Asian Art Museum environments. For Rave Into the Future, cut large MDF panels and helped build a modular floor that could move from the woodshop to the presentation level in sections; installed the robotic-vacuum charging bays and later helped dismantle the floor systematically with a circular saw.",
+        "Contributed hands-on woodworking, scenic fabrication, preparation, and installation across multiple Asian Art Museum environments. Separate from the modular gallery seating shown in the next project, my Rave Into the Future work here focused on cutting large MDF panels and helping build a modular floor that could move from the woodshop to the presentation level in sections; I installed the robotic-vacuum charging bays and later helped dismantle the floor systematically with a circular saw.",
         "For Chiharu Shiota: Two Home Countries, worked alongside the artist and studio team to produce the large red-thread weave after priming and painting the room and installing exit signage. Fabricated wood panels for the exhibition’s suspended-line installation, helped engineer the partial ceiling’s suspension with eye hooks, cable, and cable grippers, used scissor lifts and hand tools for installation, and precisely cut and heat-finished the lines to a consistent distance above the floor. The major exhibition welcomed more than 66,000 guests, exceeded attendance goals, and drew approximately twice the museum attendance of the comparable period a year earlier. For the museum gala, shaped and fabricated organic boulders and moss at the base of the stair drapery."
       ],
       capabilities: ["Exhibition installation", "Modular woodworking", "Scissor-lift work", "Artist collaboration", "Scenic fabrication"],
