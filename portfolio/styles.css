@@ -136,18 +136,20 @@ h1 {
 }
 
 .intro__word-cloud-term {
+  position: relative;
+  margin-inline: -2px;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(0.96rem, calc(0.81rem + var(--term-score) * 0.33vw), 1.68rem);
-  font-weight: calc(430 + var(--term-score) * 65);
-  letter-spacing: calc(0.02em + (5 - var(--term-score)) * 0.012em);
+  font-weight: calc(400 + var(--term-score) * 45);
+  letter-spacing: calc(-0.01em + (5 - var(--term-score)) * 0.01em);
+  opacity: var(--term-opacity);
+  transform: translate(var(--term-shift-x), var(--term-shift-y)) rotate(var(--term-rotate)) scale(var(--term-scale));
+  transform-origin: center;
   white-space: nowrap;
 }
 
 .intro__word-cloud-term:nth-child(3n + 2) {
   color: var(--ink);
-}
-
-.intro__word-cloud-term:nth-child(4n) {
-  transform: translateY(3px);
 }
 
 .projects {
