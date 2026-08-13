@@ -118,8 +118,8 @@ h1 {
   top: clamp(42px, 7vw, 82px);
   right: clamp(-28px, -2vw, -8px);
   display: flex;
-  width: min(49%, 530px);
-  max-height: 300px;
+  width: min(73.5%, 795px);
+  max-height: 450px;
   flex-wrap: wrap;
   gap: clamp(5px, 0.75vw, 10px) clamp(9px, 1.15vw, 16px);
   align-content: flex-start;
@@ -136,7 +136,7 @@ h1 {
 }
 
 .intro__word-cloud-term {
-  font-size: clamp(0.64rem, calc(0.54rem + var(--term-score) * 0.22vw), 1.12rem);
+  font-size: clamp(0.96rem, calc(0.81rem + var(--term-score) * 0.33vw), 1.68rem);
   font-weight: calc(430 + var(--term-score) * 65);
   letter-spacing: calc(0.02em + (5 - var(--term-score)) * 0.012em);
   white-space: nowrap;
@@ -513,14 +513,14 @@ h1 {
   .intro__word-cloud {
     top: 34px;
     right: -8px;
-    width: 68%;
-    max-height: 150px;
+    width: 92%;
+    max-height: 225px;
     gap: 5px 9px;
     opacity: 0.12;
   }
 
   .intro__word-cloud-term {
-    font-size: clamp(0.56rem, calc(0.5rem + var(--term-score) * 0.32vw), 0.86rem);
+    font-size: clamp(0.84rem, calc(0.75rem + var(--term-score) * 0.48vw), 1.29rem);
   }
 
   .project:nth-child(even) {
