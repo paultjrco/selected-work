@@ -63,6 +63,18 @@ main,
   text-transform: uppercase;
 }
 
+.site-header__audience {
+  max-width: 440px;
+  margin: 0 0 0 auto;
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-align: right;
+  text-transform: uppercase;
+}
+
 .intro {
   position: relative;
   isolation: isolate;
@@ -509,6 +521,15 @@ h1 {
   main,
   .site-footer {
     width: min(calc(100% - 28px), var(--max-width));
+  }
+
+  .site-header__audience {
+    width: 48%;
+    min-width: 0;
+    max-width: 48%;
+    font-size: 0.62rem;
+    letter-spacing: 0.07em;
+    overflow-wrap: anywhere;
   }
 
   .project {
