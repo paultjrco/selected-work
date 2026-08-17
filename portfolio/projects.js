@@ -5,22 +5,52 @@ window.PORTFOLIO_DATA = {
       title: "Events, Wayfinding & Environmental Graphics",
       context: "Dayspring Partners · Workplace and event experience design",
       status: "Completed",
-      image: "portfolio/images-web/dayspring-events-scope.svg",
-      alt: "Scope overview for Dayspring events and environmental graphics work",
+      image: "portfolio/images-web/dayspring-anniversary-projected-timeline.jpg",
+      alt: "Projected Dayspring company-history timeline spanning 1997 through 2017 at the twentieth-anniversary celebration",
       media: [
         {
           type: "image",
-          src: "portfolio/images-web/dayspring-events-scope.svg",
-          alt: "Portfolio presentation graphic listing visitor wayfinding, digital signage, event collateral, and vendor coordination",
+          src: "portfolio/images-web/dayspring-anniversary-projected-timeline.jpg",
+          alt: "Projected company-history timeline designed for Dayspring's twentieth-anniversary celebration",
           fit: "contain"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/dayspring-anniversary-guest-engagement.jpg",
+          alt: "Anniversary guests using the designed name cards and interactive activity materials"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/dayspring-anniversary-interactive-materials.jpg",
+          alt: "Close view of the anniversary welcome sheet, name cards, markers, and color-coded guest activity materials"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/dayspring-anniversary-product-demo.jpg",
+          alt: "Digital product demonstrations and company-history presentation displayed during the anniversary event"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/dayspring-anniversary-branded-cup.jpg",
+          alt: "Blue cup printed with the Dayspring twentieth-anniversary identity"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/dayspring-anniversary-branded-collateral.jpg",
+          alt: "Coordinated twentieth-anniversary identity printed on cups and green napkins"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/dayspring-anniversary-guest-activity.jpg",
+          alt: "Guests completing a designed interactive activity with name cards and color-coded stickers"
         }
       ],
       description: [
-        "Designed coordinated environmental and event communications for Dayspring Partners, including visitor wayfinding across rooms and program locations, digital signage and self-running animations, reception and booth graphics, registration badges, invitations, and other branded touchpoints.",
-        "For a company event serving approximately 200 guests, coordinated printing, photo-booth, food, and other vendors while managing the visual details across physical and digital formats. Additional work included a projected office-history timeline, projector rigging, and interactive guest experiences. The image shown is a portfolio scope overview rather than documentary event photography."
+        "Led the overall celebration design for Dayspring's twentieth-anniversary event, including invitations, signage, visitor wayfinding across rooms and activities, registration and guest materials, branded collateral, digital presentations, and a projected company-history timeline.",
+        "Planned the event and its logistics for approximately 200 guests, coordinating printing, photo-booth, food, and other vendors while carrying the experience from visual concept through production and on-site execution. I also designed interactive guest activities, constructed the projector rigging, and configured the self-running projection system."
       ],
-      capabilities: ["Wayfinding", "Environmental graphics", "Adobe Creative Suite", "Production artwork", "Vendor coordination"],
-      tags: ["signage", "wayfinding", "environmental-graphics", "event-design", "production", "vendors"]
+      capabilities: ["Celebration design", "Event planning", "Logistics planning", "Wayfinding", "Environmental graphics", "Invitation design", "Production artwork", "Vendor coordination"],
+      tags: ["signage", "wayfinding", "environmental-graphics", "event-design", "event-planning", "logistics", "invitations", "production", "vendors"]
     },
     {
       id: "house-number-signage",
@@ -439,8 +469,8 @@ window.PORTFOLIO_DATA = {
       audience: "Tesla · Signs & Graphics Designer",
       summary: "Environmental graphics shaped from concept through production—combining wayfinding, typography, fabrication knowledge, vendor coordination, and hands-on installation experience.",
       projectIds: [
-        "climate-progress",
         "dayspring-events",
+        "climate-progress",
         "cals-corner",
         "house-number-signage",
         "brown-bear-tree"
