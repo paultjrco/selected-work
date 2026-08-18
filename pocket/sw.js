@@ -1,4 +1,4 @@
-const CACHE_NAME = "pocket-portfolio-spaces-v3";
+const CACHE_NAME = "pocket-portfolio-spaces-v4";
 const ASSETS = [
   "./",
   "index.html",
@@ -10,7 +10,7 @@ const ASSETS = [
   "images/brown-bear-tree-finished-doorway-blurred.jpg",
   "images/faux-tree-base-detail-process.jpg",
   "images/dayspring-anniversary-interactive-materials.jpg",
-  "images/dayspring-anniversary-projected-timeline.jpg",
+  "images/dayspring-anniversary-projection-viewer.jpg",
   "images/dayspring-anniversary-branded-collateral.jpg",
   "images/dayspring-anniversary-guest-engagement.jpg",
   "images/modular-backdrop-wedding-couple-blurred.jpg",

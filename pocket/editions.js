@@ -41,9 +41,9 @@ window.POCKET_PORTFOLIO_EDITIONS = {
             focus: "right center"
           },
           {
-            src: "../../portfolio/images-web/dayspring-anniversary-projected-timeline.jpg",
-            alt: "Large projected company-history timeline spanning the anniversary event space",
-            focus: "bottom center"
+            src: "../../portfolio/images-web/dayspring-anniversary-projection-viewer.jpg",
+            alt: "Guest viewing the large projected company-history timeline at the Dayspring anniversary event",
+            focus: "center"
           },
           {
             src: "../../portfolio/images-web/dayspring-anniversary-branded-collateral.jpg",

@@ -240,6 +240,19 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 .contact__details a { text-decoration: underline; text-underline-offset: .25rem; }
 .contact__partner-note { margin: 1.25rem 0 0; color: rgba(255,255,255,.55); font-size: .66rem; line-height: 1.4; }
 
+.back-to-top {
+  display: inline-block;
+  margin-top: 1rem;
+  color: rgba(255,255,255,.45);
+  font-size: .63rem;
+  letter-spacing: .08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible { color: rgba(255,255,255,.82); }
+
 .presentation-offer {
   position: absolute;
   right: 1.25rem;

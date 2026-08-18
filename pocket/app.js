@@ -31,6 +31,7 @@
   };
 
   const intro = document.createElement("section");
+  intro.id = "presentation-start";
   intro.className = "screen screen--intro";
   intro.setAttribute("aria-labelledby", "intro-title");
   const introductionTitle = edition.introduction.titleLines
@@ -135,11 +136,20 @@
         </div>
       </div>
       <p class="contact__partner-note">${contact.partnerNote}</p>
+      <a class="back-to-top" href="#presentation-start">Back to top <span aria-hidden="true">↑</span></a>
     </div>
     <button class="presentation-offer" type="button">${contact.presentationOffer}</button>
   `;
   finalScreen.prepend(screenCounter(totalScreens));
   presentation.appendChild(finalScreen);
+
+  finalScreen.querySelector(".back-to-top").addEventListener("click", (event) => {
+    event.preventDefault();
+    presentation.scrollTo({
+      top: 0,
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+    });
+  });
 
   const productDialog = document.createElement("dialog");
   productDialog.className = "product-dialog";
