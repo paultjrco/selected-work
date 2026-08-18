@@ -53,7 +53,7 @@ window.POCKET_PORTFOLIO_EDITIONS = {
           {
             src: "../../portfolio/images-web/dayspring-anniversary-guest-engagement.jpg",
             alt: "Guests engaging with designed activity materials at the Dayspring anniversary event",
-            focus: "bottom right"
+            focus: "bottom center"
           }
         ]
       },
