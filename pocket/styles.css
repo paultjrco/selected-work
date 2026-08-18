@@ -199,11 +199,16 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 .gallery__button {
   width: 2.75rem;
   height: 2.75rem;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  color: var(--ink);
-  background: rgba(17,17,16,.42);
+  padding: 0;
+  border: 0;
+  color: rgba(255,255,255,.42);
+  font-size: .85rem;
+  background: transparent;
+  cursor: pointer;
 }
+
+.gallery__button:hover,
+.gallery__button:focus-visible { color: rgba(255,255,255,.82); }
 
 .gallery__dots { display: flex; justify-content: center; gap: .45rem; }
 .gallery__dot { width: .32rem; height: .32rem; border-radius: 50%; background: rgba(255,255,255,.35); }

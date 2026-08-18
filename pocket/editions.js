@@ -134,8 +134,8 @@ window.POCKET_PORTFOLIO_EDITIONS = {
       },
       {
         category: "Interactive Displays",
-        client: "Concept Studies",
-        statement: "Branded physical-digital touchpoints imagined around each business, environment, and customer experience.",
+        client: "In Development",
+        statement: "Exploring playful, branded ways to bring digital experiences into physical spaces.",
         frames: [
           {
             src: "../../portfolio/images-web/concept-coffee-touchscreen.jpg",
