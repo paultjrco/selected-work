@@ -110,6 +110,19 @@
     controls.querySelector(".gallery__button--previous").addEventListener("click", () => move(-1));
     controls.querySelector(".gallery__button--next").addEventListener("click", () => move(1));
     track.addEventListener("scroll", updateDots, { passive: true });
+    window.addEventListener("keydown", (event) => {
+      if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+      if (event.altKey || event.ctrlKey || event.metaKey) return;
+      if (document.querySelector("dialog[open]")) return;
+      if (event.target instanceof Element && event.target.closest("a, button, input, textarea, select")) return;
+
+      const bounds = screen.getBoundingClientRect();
+      const viewportCenter = window.innerHeight / 2;
+      if (bounds.top > viewportCenter || bounds.bottom < viewportCenter) return;
+
+      event.preventDefault();
+      move(event.key === "ArrowLeft" ? -1 : 1);
+    });
 
     screen.append(gallery, overlay, controls);
     presentation.appendChild(screen);

@@ -80,8 +80,9 @@ window.POCKET_PORTFOLIO_EDITIONS = {
         statement: "Spatial storytelling, custom-built elements, and thoughtful visitor interactions.",
         frames: [
           {
-            src: "../../portfolio/images-web/IMG_1381.jpg",
-            alt: "Completed Cal’s Corner library environment with tree, stairway, and reading spaces"
+            src: "../../portfolio/images-web/cals-corner-visitors-wide.jpg",
+            alt: "Visitors gathering throughout the completed Cal’s Corner library environment",
+            focus: "center"
           },
           {
             src: "../../portfolio/images-web/IMG_1396.jpg",
