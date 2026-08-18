@@ -42,7 +42,7 @@ window.POCKET_PORTFOLIO_EDITIONS = {
           },
           {
             src: "../../portfolio/images-web/dayspring-anniversary-projection-viewer.jpg",
-            alt: "Guest viewing the large projected company-history timeline at the Dayspring anniversary event",
+            alt: "Silhouetted guest viewing the large projected company-history timeline at the Dayspring anniversary event",
             focus: "center"
           },
           {
