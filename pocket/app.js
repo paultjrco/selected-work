@@ -127,7 +127,7 @@
       <p class="contact__body">${contact.body}</p>
       <div class="contact__handoff">
         <div class="qr-code">
-          <img src="images/url-pocket-v1.png" alt="QR code for the PAULTJRCO Pocket Portfolio">
+          <img src="images/qrcode.png" alt="QR code for the PAULTJRCO Pocket Portfolio">
         </div>
         <div class="contact__details">
           <a href="tel:${contact.phoneHref}">${contact.phoneDisplay}</a>
