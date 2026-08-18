@@ -44,7 +44,7 @@
       <h1 id="intro-title">${introductionTitle}</h1>
       <p class="intro__body">${edition.introduction.body}</p>
     </div>
-    <p class="gesture-hint"><span aria-hidden="true">↑</span> Swipe up to view work</p>
+    <p class="gesture-hint"><span class="gesture-hint__arrow" aria-hidden="true">↑</span><span>Swipe</span></p>
   `;
   intro.prepend(screenCounter(1));
   presentation.appendChild(intro);

@@ -64,7 +64,10 @@ a { font: inherit; }
   justify-content: center;
 }
 
-.intro__content { max-width: 31rem; }
+.intro__content {
+  max-width: 31rem;
+  transform: translateY(4vh);
+}
 .intro__brand {
   margin: 0 0 clamp(4rem, 17vh, 8rem);
   font-size: clamp(1rem, 5vw, 1.35rem);
@@ -102,15 +105,25 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 
 .gesture-hint {
   position: absolute;
+  right: 0;
   bottom: var(--safe-bottom);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .35rem;
   margin: 0;
   color: rgba(255,255,255,.58);
   font-size: .72rem;
   letter-spacing: .08em;
+  text-align: center;
   text-transform: uppercase;
 }
 
-.gesture-hint span { display: inline-block; margin-right: .45rem; }
+.gesture-hint__arrow {
+  font-size: .9rem;
+  line-height: 1;
+}
 
 .screen--project { padding: 0; }
 
