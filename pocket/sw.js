@@ -1,4 +1,4 @@
-const CACHE_NAME = "pocket-portfolio-spaces-v1";
+const CACHE_NAME = "pocket-portfolio-spaces-v2";
 const ASSETS = [
   "./",
   "index.html",
@@ -23,11 +23,11 @@ const ASSETS = [
   "images/climate-progress-finished-event-display.jpg",
   "images/IMG_3812.jpg",
   "images/climate-progress-cnc-logo-process.jpg",
-  "images/concept-display-touchscreen-options.jpg",
   "images/concept-streetcar-touchscreen.jpg",
   "images/concept-pet-care-touchscreen.jpg",
   "images/concept-coffee-touchscreen.jpg",
-  "images/concept-rock-climbing-touchscreen.jpg"
+  "images/concept-rock-climbing-touchscreen.jpg",
+  "images/concept-single-touchscreen.jpg"
 ];
 
 self.addEventListener("install", (event) => {

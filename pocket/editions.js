@@ -3,8 +3,8 @@ window.POCKET_PORTFOLIO_EDITIONS = {
     pageTitle: "PAULTJRCO — Spatial Experiences",
     brand: "PAULTJRCO",
     introduction: {
-      label: "Design · Fabrication · Collaboration",
-      titleLines: ["Signs, displays,", "and experiences—", "designed and built."],
+      label: "Design · Fabrication · Consultation",
+      titleLines: ["Custom Visitor", "Experiences"],
       body: "For businesses, events, architects, and creative teams."
     },
     projects: [
@@ -138,8 +138,8 @@ window.POCKET_PORTFOLIO_EDITIONS = {
         statement: "Branded physical-digital touchpoints imagined around each business, environment, and customer experience.",
         frames: [
           {
-            src: "../../portfolio/images-web/concept-display-touchscreen-options.jpg",
-            alt: "Concept rendering comparing display-only and touchscreen configurations for a modular vendor display",
+            src: "../../portfolio/images-web/concept-coffee-touchscreen.jpg",
+            alt: "Concept rendering of a coffee-cup touchscreen enclosure for a café ordering experience",
             focus: "center"
           },
           {
@@ -153,13 +153,13 @@ window.POCKET_PORTFOLIO_EDITIONS = {
             focus: "center"
           },
           {
-            src: "../../portfolio/images-web/concept-coffee-touchscreen.jpg",
-            alt: "Concept rendering of a coffee-cup touchscreen enclosure for a café ordering experience",
+            src: "../../portfolio/images-web/concept-rock-climbing-touchscreen.jpg",
+            alt: "Concept rendering of a rock-shaped interactive display for a climbing business",
             focus: "center"
           },
           {
-            src: "../../portfolio/images-web/concept-rock-climbing-touchscreen.jpg",
-            alt: "Concept rendering of a rock-shaped interactive display for a climbing business",
+            src: "../../portfolio/images-web/concept-single-touchscreen.jpg",
+            alt: "Concept rendering of a single modular touchscreen display with a branded wooden base",
             focus: "center"
           }
         ]
