@@ -1,0 +1,184 @@
+window.POCKET_PORTFOLIO_EDITIONS = {
+  spaces: {
+    pageTitle: "PAULTJRCO — Spatial Experiences",
+    brand: "PAULTJRCO",
+    introduction: {
+      label: "Design · Fabrication · Collaboration",
+      titleLines: ["Signs, displays,", "and experiences—", "designed and built."],
+      body: "For businesses, events, architects, and creative teams."
+    },
+    projects: [
+      {
+        category: "Experiential Spaces",
+        client: "Brown Bear Toys",
+        statement: "Custom fabrication that transforms an ordinary retail space into a memorable destination.",
+        frames: [
+          {
+            src: "../../portfolio/images-web/brown-bear-tree-finished-wide-doorway-blurred.jpg",
+            alt: "Dramatic wide view of the completed faux tree transforming a softly blurred retail doorway",
+            focus: "center"
+          },
+          {
+            src: "../../portfolio/images-web/brown-bear-tree-finished-doorway-blurred.jpg",
+            alt: "Completed artificial tree installation framing a softly blurred doorway inside Brown Bear Toys",
+            focus: "center"
+          },
+          {
+            src: "../../portfolio/images-web/faux-tree-base-detail-process.jpg",
+            alt: "Detailed scenic fabrication at the base of the faux tree",
+            focus: "bottom center"
+          }
+        ]
+      },
+      {
+        category: "Event Signage & Environments",
+        client: "Dayspring Partners",
+        statement: "Wayfinding, branding, projections, invitations, and a cohesive event experience.",
+        frames: [
+          {
+            src: "../../portfolio/images-web/dayspring-anniversary-interactive-materials.jpg",
+            alt: "Designed welcome, name-card, and interactive event materials",
+            focus: "right center"
+          },
+          {
+            src: "../../portfolio/images-web/dayspring-anniversary-projected-timeline.jpg",
+            alt: "Large projected company-history timeline spanning the anniversary event space",
+            focus: "bottom center"
+          },
+          {
+            src: "../../portfolio/images-web/dayspring-anniversary-branded-collateral.jpg",
+            alt: "Coordinated anniversary identity applied to event cups and napkins",
+            focus: "left center"
+          },
+          {
+            src: "../../portfolio/images-web/dayspring-anniversary-guest-engagement.jpg",
+            alt: "Guests engaging with designed activity materials at the Dayspring anniversary event",
+            focus: "bottom right"
+          }
+        ]
+      },
+      {
+        category: "Custom Backdrops",
+        client: "Modular Event Structures",
+        statement: "Reusable structures designed for weddings, branded photo opportunities, and custom event environments.",
+        frames: [
+          {
+            src: "../../portfolio/images-web/modular-backdrop-wedding-couple-blurred.jpg",
+            alt: "Custom modular wooden backdrop in use at a wedding, with the couple blurred so the structure remains the visual focus",
+            focus: "top center"
+          },
+          {
+            src: "../../portfolio/images-web/modular-backdrop-concept-render.jpg",
+            alt: "Concept rendering based on Paul’s sketch showing the freestanding modular wooden backdrop and reusable bolted construction",
+            focus: "center"
+          }
+        ]
+      },
+      {
+        category: "Immersive Visitor Spaces",
+        client: "Cal’s Corner",
+        statement: "Spatial storytelling, custom-built elements, and thoughtful visitor interactions.",
+        frames: [
+          {
+            src: "../../portfolio/images-web/IMG_1381.jpg",
+            alt: "Completed Cal’s Corner library environment with tree, stairway, and reading spaces"
+          },
+          {
+            src: "../../portfolio/images-web/IMG_1396.jpg",
+            alt: "Visitors gathering around and exploring the Cal’s Corner environment",
+            focus: "left center"
+          },
+          {
+            src: "../../portfolio/images-web/IMG_1371.jpg",
+            alt: "Curved interior rooms and spatial details inside Cal’s Corner",
+            focus: "left center"
+          },
+          {
+            src: "../../portfolio/images-web/cals-corner-height-access-sign.png",
+            alt: "Custom fabricated safety and access sign for Cal’s Corner",
+            fit: "contain"
+          },
+          {
+            src: "../../portfolio/images-web/cals-corner-do-not-touch-sign.png",
+            alt: "Custom fabricated Cal’s Corner sign asking visitors not to touch the tree or branches",
+            fit: "contain"
+          }
+        ]
+      },
+      {
+        category: "Custom Signage",
+        client: "House Numbers · Event Graphics",
+        statement: "Dimensional signs and graphics developed from digital layouts through CNC routing, finishing, and mounting design.",
+        frames: [
+          {
+            src: "../../portfolio/images-web/custom-cnc.jpg",
+            alt: "Close view of a custom CNC-cut dimensional house-number sign",
+            focus: "center"
+          },
+          {
+            src: "../../portfolio/images-web/climate-progress-finished-event-display.jpg",
+            alt: "Completed dimensional Climate Progress sign installed on an easel at its outdoor community event",
+            focus: "top center"
+          },
+          {
+            src: "../../portfolio/images-web/IMG_3812.jpg",
+            alt: "CNC-cut dimensional sign components arranged during production",
+            focus: "right center"
+          },
+          {
+            src: "../../portfolio/images-web/climate-progress-cnc-logo-process.jpg",
+            alt: "CNC-routed circular identity component before painting and assembly",
+            focus: "center"
+          }
+        ]
+      },
+      {
+        category: "Interactive Displays",
+        client: "Concept Studies",
+        statement: "Branded physical-digital touchpoints imagined around each business, environment, and customer experience.",
+        frames: [
+          {
+            src: "../../portfolio/images-web/concept-display-touchscreen-options.jpg",
+            alt: "Concept rendering comparing display-only and touchscreen configurations for a modular vendor display",
+            focus: "center"
+          },
+          {
+            src: "../../portfolio/images-web/concept-streetcar-touchscreen.jpg",
+            alt: "Concept rendering of an interactive San Francisco streetcar-inspired visitor kiosk",
+            focus: "center"
+          },
+          {
+            src: "../../portfolio/images-web/concept-pet-care-touchscreen.jpg",
+            alt: "Concept rendering of a sculptural tree-stump touchscreen enclosure for a pet-care business",
+            focus: "center"
+          },
+          {
+            src: "../../portfolio/images-web/concept-coffee-touchscreen.jpg",
+            alt: "Concept rendering of a coffee-cup touchscreen enclosure for a café ordering experience",
+            focus: "center"
+          },
+          {
+            src: "../../portfolio/images-web/concept-rock-climbing-touchscreen.jpg",
+            alt: "Concept rendering of a rock-shaped interactive display for a climbing business",
+            focus: "center"
+          }
+        ]
+      }
+    ],
+    contact: {
+      heading: "Let’s make something memorable.",
+      name: "Paul Tomanpos, Jr.",
+      brand: "PAULTJRCO",
+      body: "Available for fabrication, spatial design, portable signage, displays, consultations, and creative collaborations.",
+      phoneDisplay: "415-937-7890",
+      phoneHref: "+14159377890",
+      email: "paultjrco@gmail.com",
+      url: "paultjrco.github.io",
+      partnerNote: "For permitted or licensed installation, I can collaborate with qualified project partners.",
+      presentationOffer: "Present your business like this",
+      productName: "Pocket Portfolio",
+      productByline: "by PAULTJRCO",
+      productMessage: "Contact me to make one for your business."
+    }
+  }
+};
