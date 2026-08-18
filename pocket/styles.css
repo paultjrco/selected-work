@@ -220,18 +220,20 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
   margin-top: 1.6rem;
 }
 
-.qr-placeholder {
+.qr-code {
   display: grid;
   place-items: center;
   aspect-ratio: 1;
   padding: .75rem;
-  border: 1px dashed rgba(255,255,255,.42);
-  color: var(--ink);
   background: #efeee9;
 }
 
-.qr-placeholder span { color: #171716; font-size: 2rem; letter-spacing: .1em; }
-.qr-placeholder small { color: #575752; font-size: .57rem; text-transform: uppercase; }
+.qr-code img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .contact__details { display: flex; flex-direction: column; gap: .7rem; min-width: 0; }
 .contact__details a,
 .contact__details span { overflow-wrap: anywhere; color: var(--ink); font-size: .78rem; line-height: 1.3; text-decoration: none; }

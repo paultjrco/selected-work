@@ -27,7 +27,7 @@ Swipe or scroll vertically between screens. Swipe horizontally within project sc
 ## Prototype status
 
 - The first real-photo galleries are in place for interaction and image-selection review.
-- The QR block is a placeholder until the public destination is finalized.
+- The final handoff screen includes a scannable QR code for the published Pocket Portfolio URL.
 - A scoped service worker caches the complete presentation after its first successful online load. Reopen it once before an event to confirm offline availability on the presentation device.
 - Additional editions should be added as sibling entries in `editions.js`.
 
