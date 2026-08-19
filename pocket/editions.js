@@ -31,7 +31,7 @@ window.POCKET_PORTFOLIO_EDITIONS = {
         ]
       },
       {
-        category: "Event Signage & Environments",
+        category: "Event Signage & Digital Experiences",
         client: "Dayspring Partners",
         statement: "Wayfinding, branding, projections, invitations, and a cohesive event experience.",
         frames: [
@@ -44,6 +44,11 @@ window.POCKET_PORTFOLIO_EDITIONS = {
             src: "../../portfolio/images-web/dayspring-anniversary-interactive-materials.jpg",
             alt: "Designed welcome, name-card, and interactive event materials",
             focus: "right center"
+          },
+          {
+            src: "../../portfolio/images-web/dayspring-event-self-running-kiosk.jpg",
+            alt: "Self-running kiosk presentation supporting guest exploration at the Dayspring anniversary event",
+            focus: "top center"
           },
           {
             src: "../../portfolio/images-web/dayspring-anniversary-branded-collateral.jpg",
