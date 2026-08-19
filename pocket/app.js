@@ -145,7 +145,7 @@
   finalScreen.innerHTML = `
     <div class="contact__content">
       <p class="eyebrow">${contact.brand}</p>
-      <h2 id="contact-title" aria-label="${contact.heading}">${contact.headingLead || "Let’s make something"} <span class="rotating-word" aria-hidden="true">${headingWords[0]}</span>.</h2>
+      <h2 id="contact-title" aria-label="${contact.heading}"><span class="contact-title__lead">${contact.headingLead || "Let’s make something"}</span><span class="rotating-word-frame" aria-hidden="true"><span class="rotating-word">${headingWords[0]}</span></span><span aria-hidden="true">.</span></h2>
       <p class="contact__body">${contact.body}</p>
       <div class="contact__handoff">
         <button class="qr-code" type="button" aria-label="Enlarge QR code" aria-haspopup="dialog">
@@ -172,11 +172,14 @@
     const rotatingWord = finalScreen.querySelector(".rotating-word");
     let headingWordIndex = 0;
     window.setInterval(() => {
-      rotatingWord.classList.add("is-changing");
+      rotatingWord.classList.add("is-leaving");
       window.setTimeout(() => {
         headingWordIndex = (headingWordIndex + 1) % headingWords.length;
         rotatingWord.textContent = headingWords[headingWordIndex];
-        rotatingWord.classList.remove("is-changing");
+        rotatingWord.classList.remove("is-leaving");
+        rotatingWord.classList.add("is-entering");
+        void rotatingWord.offsetWidth;
+        window.requestAnimationFrame(() => rotatingWord.classList.remove("is-entering"));
       }, 220);
     }, 2200);
   }

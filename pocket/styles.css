@@ -239,18 +239,29 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 
 .contact__content { max-width: 32rem; }
 .screen--contact { padding-bottom: calc(var(--safe-bottom) + 7.5rem); }
+.screen--contact h2 { font-size: clamp(1.85rem, 9vw, 4rem); }
 .contact__details .contact__name { font-size: .92rem; font-weight: 700; }
 
-.rotating-word {
+.contact-title__lead { display: block; white-space: nowrap; }
+
+.rotating-word-frame {
   display: inline-block;
+  width: 6.6em;
   padding-bottom: .05em;
   border-bottom: .065em solid currentColor;
   line-height: .95;
+  text-align: left;
   white-space: nowrap;
+  overflow: hidden;
+}
+
+.rotating-word {
+  display: inline-block;
   transition: opacity .22s ease, transform .22s ease;
 }
 
-.rotating-word.is-changing { opacity: 0; transform: translateY(.18em); }
+.rotating-word.is-leaving { opacity: 0; transform: translateX(.35em); }
+.rotating-word.is-entering { opacity: 0; transform: translateX(-.35em); }
 
 .contact__handoff {
   display: grid;
