@@ -73,9 +73,9 @@ a { font: inherit; }
   position: absolute;
   top: var(--safe-top);
   left: 1.25rem;
-  width: 3.75rem;
-  height: 3.75rem;
-  border-radius: .4rem;
+  width: 7.25rem;
+  height: 7.25rem;
+  filter: invert(1);
 }
 .intro__brand {
   margin: 0 0 clamp(4rem, 17vh, 8rem);
