@@ -239,7 +239,7 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 
 .contact__content { max-width: 32rem; }
 .screen--contact { padding-bottom: calc(var(--safe-bottom) + 7.5rem); }
-.screen--contact h2 { font-size: clamp(1.85rem, 9vw, 4rem); }
+.screen--contact h2 { font-size: clamp(1.85rem, 9vw, 4rem); line-height: 1.12; }
 .contact__details .contact__name { font-size: .92rem; font-weight: 700; }
 
 .contact-title__lead { display: block; white-space: nowrap; }
@@ -249,8 +249,8 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
   width: 6.6em;
   padding-bottom: .05em;
   border-bottom: .065em solid currentColor;
-  line-height: .95;
-  text-align: left;
+  line-height: 1.05;
+  text-align: center;
   white-space: nowrap;
   overflow: hidden;
 }
