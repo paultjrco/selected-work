@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Caveat";
+  src: url("fonts/caveat-500.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
 :root {
   color-scheme: dark;
   --ink: #f3f0e9;
@@ -257,6 +265,10 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 
 .rotating-word {
   display: inline-block;
+  font-family: "Caveat", "Segoe Print", cursive;
+  font-size: 1.16em;
+  font-weight: 500;
+  letter-spacing: .01em;
   transition: opacity .22s ease, transform .22s ease;
 }
 
@@ -461,3 +473,4 @@ body:has(.product-dialog[open], .qr-dialog[open]) .presentation { overflow: hidd
 @media (prefers-reduced-motion: reduce) {
   .gallery__track { scroll-behavior: auto; }
 }
+:root {
