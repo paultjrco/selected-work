@@ -265,10 +265,12 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 
 .rotating-word {
   display: inline-block;
+  width: 100%;
   font-family: "Caveat", "Segoe Print", cursive;
   font-size: 1.16em;
   font-weight: 500;
   letter-spacing: .01em;
+  text-align: center;
   clip-path: inset(0 0 0 0);
   transition: opacity .22s ease, transform .22s ease, clip-path .22s ease;
 }
