@@ -76,6 +76,7 @@ a { font: inherit; }
   width: 7.25rem;
   height: 7.25rem;
   filter: invert(1);
+  mix-blend-mode: screen;
 }
 .intro__brand {
   margin: 0 0 clamp(4rem, 17vh, 8rem);
