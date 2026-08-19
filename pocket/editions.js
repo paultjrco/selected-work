@@ -24,6 +24,11 @@ window.POCKET_PORTFOLIO_EDITIONS = {
             focus: "center"
           },
           {
+            src: "../../portfolio/images-web/brown-bear-tree-finished-with-scale.jpg",
+            alt: "Person standing beneath the completed Brown Bear Toys faux tree, showing the scale of the retail installation",
+            focus: "top center"
+          },
+          {
             src: "../../portfolio/images-web/faux-tree-base-detail-process.jpg",
             alt: "Detailed scenic fabrication at the base of the faux tree",
             focus: "bottom center"
