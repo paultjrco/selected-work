@@ -228,7 +228,7 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 .gallery__dot[data-active] { width: 1.25rem; border-radius: 1rem; background: var(--ink); }
 
 .contact__content { max-width: 32rem; }
-.contact__name { margin: 1.2rem 0 0; font-size: 1.15rem; }
+.contact__details .contact__name { font-size: .92rem; }
 
 .contact__handoff {
   display: grid;

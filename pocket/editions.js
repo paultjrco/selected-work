@@ -181,10 +181,10 @@ window.POCKET_PORTFOLIO_EDITIONS = {
       email: "paultjrco@gmail.com",
       url: "paultjrco.github.io",
       partnerNote: "Licensed installation available through qualified partners.",
-      presentationOffer: "Present your business like this",
+      presentationOffer: "Like this presentation?",
       productName: "Pocket Portfolio",
       productByline: "by PAULTJRCO",
-      productMessage: "Contact me to make one for your business."
+      productMessage: "Contact me to make a presentation like this for your business."
     }
   }
 };

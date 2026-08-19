@@ -136,15 +136,15 @@
     <div class="contact__content">
       <p class="eyebrow">${contact.brand}</p>
       <h2 id="contact-title">${contact.heading}</h2>
-      <p class="contact__name">${contact.name}</p>
       <p class="contact__body">${contact.body}</p>
       <div class="contact__handoff">
         <div class="qr-code">
           <img src="images/qrcode.png" alt="QR code for the PAULTJRCO Pocket Portfolio">
         </div>
         <div class="contact__details">
-          <a href="tel:${contact.phoneHref}">${contact.phoneDisplay}</a>
+          <span class="contact__name">${contact.name}</span>
           <a href="mailto:${contact.email}">${contact.email}</a>
+          <a href="tel:${contact.phoneHref}">${contact.phoneDisplay}</a>
           <span>${contact.url}</span>
         </div>
       </div>
@@ -172,7 +172,7 @@
     <p class="product-dialog__byline">${contact.productByline}</p>
     <h2 id="product-dialog-title">${contact.productName}</h2>
     <p>${contact.productMessage}</p>
-    <a class="product-dialog__cta" href="mailto:${contact.email}?subject=Pocket%20Portfolio">${contact.email}</a>
+    <a class="product-dialog__cta" href="mailto:${contact.email}?subject=Pocket%20Portfolio%20Inquiry">${contact.email}</a>
   `;
   document.body.appendChild(productDialog);
 
