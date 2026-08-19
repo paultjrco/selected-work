@@ -240,6 +240,17 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 .screen--contact { padding-bottom: calc(var(--safe-bottom) + 7.5rem); }
 .contact__details .contact__name { font-size: .92rem; font-weight: 700; }
 
+.rotating-word {
+  display: inline-block;
+  padding-bottom: .05em;
+  border-bottom: .065em solid currentColor;
+  line-height: .95;
+  white-space: nowrap;
+  transition: opacity .22s ease, transform .22s ease;
+}
+
+.rotating-word.is-changing { opacity: 0; transform: translateY(.18em); }
+
 .contact__handoff {
   display: grid;
   grid-template-columns: minmax(7rem, 34vw) 1fr;

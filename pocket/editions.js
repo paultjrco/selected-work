@@ -173,6 +173,8 @@ window.POCKET_PORTFOLIO_EDITIONS = {
     ],
     contact: {
       heading: "Let’s make something memorable.",
+      headingLead: "Let’s make something",
+      headingWords: ["memorable", "easy to use", "fun", "engaging", "inviting", "delightful", "meaningful"],
       name: "Paul Tomanpos, Jr.",
       brand: "PAULTJRCO",
       body: "Experience Design & Fabrication",

@@ -138,13 +138,14 @@
   });
 
   const contact = edition.contact;
+  const headingWords = contact.headingWords || ["memorable"];
   const finalScreen = document.createElement("section");
   finalScreen.className = "screen screen--contact";
   finalScreen.setAttribute("aria-labelledby", "contact-title");
   finalScreen.innerHTML = `
     <div class="contact__content">
       <p class="eyebrow">${contact.brand}</p>
-      <h2 id="contact-title">${contact.heading}</h2>
+      <h2 id="contact-title" aria-label="${contact.heading}">${contact.headingLead || "Let’s make something"} <span class="rotating-word" aria-hidden="true">${headingWords[0]}</span>.</h2>
       <p class="contact__body">${contact.body}</p>
       <div class="contact__handoff">
         <button class="qr-code" type="button" aria-label="Enlarge QR code" aria-haspopup="dialog">
@@ -166,6 +167,19 @@
   `;
   finalScreen.prepend(screenCounter(totalScreens));
   presentation.appendChild(finalScreen);
+
+  if (headingWords.length > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const rotatingWord = finalScreen.querySelector(".rotating-word");
+    let headingWordIndex = 0;
+    window.setInterval(() => {
+      rotatingWord.classList.add("is-changing");
+      window.setTimeout(() => {
+        headingWordIndex = (headingWordIndex + 1) % headingWords.length;
+        rotatingWord.textContent = headingWords[headingWordIndex];
+        rotatingWord.classList.remove("is-changing");
+      }, 220);
+    }, 2200);
+  }
 
   finalScreen.querySelector(".back-to-top").addEventListener("click", (event) => {
     event.preventDefault();
