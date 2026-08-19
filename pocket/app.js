@@ -150,7 +150,7 @@
       </div>
     </div>
     <div class="contact__footer">
-      <a class="back-to-top" href="#presentation-start"><span class="back-to-top__arrow" aria-hidden="true">↑</span><span>Back to top</span></a>
+      <a class="back-to-top" href="#presentation-start"><span class="back-to-top__arrow" aria-hidden="true">↑</span><span>Restart</span></a>
       <p class="contact__partner-note">${contact.partnerNote}</p>
       <button class="presentation-offer" type="button">${contact.presentationOffer}</button>
     </div>
@@ -195,7 +195,16 @@
   `;
   document.body.appendChild(qrDialog);
 
+  const qrShortcut = document.createElement("button");
+  qrShortcut.className = "qr-shortcut";
+  qrShortcut.type = "button";
+  qrShortcut.textContent = "QR Code";
+  qrShortcut.setAttribute("aria-label", "Open Pocket Portfolio QR code");
+  qrShortcut.setAttribute("aria-haspopup", "dialog");
+  document.body.appendChild(qrShortcut);
+
   finalScreen.querySelector(".qr-code").addEventListener("click", () => qrDialog.showModal());
+  qrShortcut.addEventListener("click", () => qrDialog.showModal());
   qrDialog.querySelector(".qr-dialog__close").addEventListener("click", () => qrDialog.close());
   qrDialog.addEventListener("click", (event) => {
     const bounds = qrDialog.getBoundingClientRect();

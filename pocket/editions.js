@@ -123,7 +123,7 @@ window.POCKET_PORTFOLIO_EDITIONS = {
       },
       {
         category: "Custom Signage",
-        client: "House Numbers · Event Graphics",
+        client: "Dimensional Signage",
         statement: "Dimensional signs and graphics developed from digital layouts through CNC routing, finishing, and mounting design.",
         frames: [
           {
@@ -175,7 +175,7 @@ window.POCKET_PORTFOLIO_EDITIONS = {
       heading: "Let’s make something memorable.",
       name: "Paul Tomanpos, Jr.",
       brand: "PAULTJRCO",
-      body: "Available for fabrication, spatial design, portable signage, displays, consultations, and creative collaborations.",
+      body: "Experience Design & Fabrication",
       phoneDisplay: "415-937-7890",
       phoneHref: "+14159377890",
       email: "paultjrco@gmail.com",
