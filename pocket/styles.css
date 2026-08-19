@@ -254,13 +254,13 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 
 .rotating-word-frame {
   display: inline-block;
-  width: 6.6em;
+  width: 7.2em;
   padding-bottom: .05em;
   border-bottom: .065em solid currentColor;
   line-height: 1.05;
   text-align: center;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .rotating-word {
@@ -273,8 +273,8 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
   transition: opacity .22s ease, transform .22s ease, clip-path .22s ease;
 }
 
-.rotating-word.is-leaving { opacity: 0; transform: translateX(.35em); clip-path: inset(0 0 0 100%); }
-.rotating-word.is-entering { opacity: 0; transform: translateX(-.35em); clip-path: inset(0 100% 0 0); }
+.rotating-word.is-leaving { opacity: 0; transform: translateX(-.35em); clip-path: inset(0 100% 0 0); }
+.rotating-word.is-entering { opacity: 0; transform: translateX(.35em); clip-path: inset(0 0 0 100%); }
 
 .contact__handoff {
   display: grid;
