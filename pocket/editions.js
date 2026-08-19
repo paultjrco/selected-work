@@ -100,6 +100,16 @@ window.POCKET_PORTFOLIO_EDITIONS = {
             focus: "left center"
           },
           {
+            src: "../../portfolio/images-web/cals-corner-curved-stair-detail.jpg",
+            alt: "Custom curved stair and branch-inspired railing details inside Cal’s Corner",
+            focus: "58% 52%"
+          },
+          {
+            src: "../../portfolio/images-web/cals-corner-reading-nook-in-use.jpg",
+            alt: "Young visitor using the elevated reading nook framed by sculptural branches",
+            focus: "72% 50%"
+          },
+          {
             src: "../../portfolio/images-web/cals-corner-height-access-sign.png",
             alt: "Custom fabricated safety and access sign for Cal’s Corner",
             fit: "contain"
