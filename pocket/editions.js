@@ -165,7 +165,7 @@ window.POCKET_PORTFOLIO_EDITIONS = {
       phoneHref: "+14159377890",
       email: "paultjrco@gmail.com",
       url: "paultjrco.github.io",
-      partnerNote: "For permitted or licensed installation, I can collaborate with qualified project partners.",
+      partnerNote: "Licensed installation available through qualified partners.",
       presentationOffer: "Present your business like this",
       productName: "Pocket Portfolio",
       productByline: "by PAULTJRCO",

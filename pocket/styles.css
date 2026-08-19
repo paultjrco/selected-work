@@ -259,14 +259,21 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 .contact__partner-note { margin: 1.25rem 0 0; color: rgba(255,255,255,.55); font-size: .66rem; line-height: 1.4; }
 
 .back-to-top {
-  display: inline-block;
-  margin-top: 1rem;
-  color: rgba(255,255,255,.45);
-  font-size: .63rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .35rem;
+  width: 100%;
+  margin-top: 1.1rem;
+  color: rgba(255,255,255,.58);
+  font-size: .72rem;
   letter-spacing: .08em;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.back-to-top__arrow { font-size: .9rem; line-height: 1; }
 
 .back-to-top:hover,
 .back-to-top:focus-visible { color: rgba(255,255,255,.82); }
