@@ -5,7 +5,7 @@ window.POCKET_PORTFOLIO_EDITIONS = {
     introduction: {
       label: "Design · Fabrication · Consultation",
       titleLines: ["Custom Visitor", "Experiences"],
-      body: "For businesses, events, architects, and creative teams."
+      body: "For businesses, events, and creative teams."
     },
     projects: [
       {
