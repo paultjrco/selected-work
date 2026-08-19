@@ -19,11 +19,6 @@ window.POCKET_PORTFOLIO_EDITIONS = {
             focus: "center"
           },
           {
-            src: "../../portfolio/images-web/brown-bear-tree-finished-doorway-blurred.jpg",
-            alt: "Completed artificial tree installation framing a softly blurred doorway inside Brown Bear Toys",
-            focus: "center"
-          },
-          {
             src: "../../portfolio/images-web/brown-bear-tree-finished-with-scale.jpg",
             alt: "Person standing beneath the completed Brown Bear Toys faux tree, showing the scale of the retail installation",
             focus: "top center"
