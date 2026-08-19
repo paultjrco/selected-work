@@ -56,9 +56,9 @@ window.POCKET_PORTFOLIO_EDITIONS = {
             focus: "left center"
           },
           {
-            src: "../../portfolio/images-web/dayspring-anniversary-guest-engagement.jpg",
-            alt: "Guests engaging with designed activity materials at the Dayspring anniversary event",
-            focus: "bottom center"
+            src: "../../portfolio/images-web/dayspring-event-stickers.jpg",
+            alt: "Guest using colorful custom stickers and printed activity materials at the Dayspring anniversary event",
+            focus: "center"
           }
         ]
       },
@@ -95,8 +95,8 @@ window.POCKET_PORTFOLIO_EDITIONS = {
             focus: "left center"
           },
           {
-            src: "../../portfolio/images-web/IMG_1371.jpg",
-            alt: "Curved interior rooms and spatial details inside Cal’s Corner",
+            src: "../../portfolio/images-web/cals-corner-inside.jpg",
+            alt: "Curved interior passage, child-scale furnishings, and spatial details inside Cal’s Corner",
             focus: "left center"
           },
           {
