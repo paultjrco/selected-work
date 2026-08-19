@@ -140,8 +140,8 @@ window.POCKET_PORTFOLIO_EDITIONS = {
       },
       {
         category: "Interactive Displays",
-        client: "In Development",
-        statement: "Exploring playful, branded ways to bring digital experiences into physical spaces.",
+        client: "Concepts in Development",
+        statement: "Playful, branded ways to bring digital experiences into physical spaces. Contact me if you’re interested in one for your business.",
         frames: [
           {
             src: "../../portfolio/images-web/concept-coffee-touchscreen.jpg",
@@ -161,11 +161,6 @@ window.POCKET_PORTFOLIO_EDITIONS = {
           {
             src: "../../portfolio/images-web/concept-rock-climbing-touchscreen.jpg",
             alt: "Concept rendering of a rock-shaped interactive display for a climbing business",
-            focus: "center"
-          },
-          {
-            src: "../../portfolio/images-web/concept-single-touchscreen.jpg",
-            alt: "Concept rendering of a single modular touchscreen display with a branded wooden base",
             focus: "center"
           }
         ]
