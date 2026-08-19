@@ -148,10 +148,12 @@
           <span>${contact.url}</span>
         </div>
       </div>
-      <p class="contact__partner-note">${contact.partnerNote}</p>
-      <a class="back-to-top" href="#presentation-start"><span class="back-to-top__arrow" aria-hidden="true">↑</span><span>Back to top</span></a>
     </div>
-    <button class="presentation-offer" type="button">${contact.presentationOffer}</button>
+    <div class="contact__footer">
+      <a class="back-to-top" href="#presentation-start"><span class="back-to-top__arrow" aria-hidden="true">↑</span><span>Back to top</span></a>
+      <p class="contact__partner-note">${contact.partnerNote}</p>
+      <button class="presentation-offer" type="button">${contact.presentationOffer}</button>
+    </div>
   `;
   finalScreen.prepend(screenCounter(totalScreens));
   presentation.appendChild(finalScreen);
