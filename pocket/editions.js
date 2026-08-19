@@ -41,14 +41,14 @@ window.POCKET_PORTFOLIO_EDITIONS = {
         statement: "Wayfinding, branding, projections, invitations, and a cohesive event experience.",
         frames: [
           {
-            src: "../../portfolio/images-web/dayspring-anniversary-interactive-materials.jpg",
-            alt: "Designed welcome, name-card, and interactive event materials",
-            focus: "right center"
-          },
-          {
             src: "../../portfolio/images-web/dayspring-anniversary-projection-viewer.jpg",
             alt: "Silhouetted guest viewing the large projected company-history timeline at the Dayspring anniversary event",
             focus: "center"
+          },
+          {
+            src: "../../portfolio/images-web/dayspring-anniversary-interactive-materials.jpg",
+            alt: "Designed welcome, name-card, and interactive event materials",
+            focus: "right center"
           },
           {
             src: "../../portfolio/images-web/dayspring-anniversary-branded-collateral.jpg",

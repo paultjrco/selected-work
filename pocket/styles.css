@@ -242,8 +242,8 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
   display: grid;
   place-items: center;
   aspect-ratio: 1;
-  padding: .75rem;
-  background: #efeee9;
+  padding: 0;
+  background: transparent;
 }
 
 .qr-code img {
@@ -255,7 +255,7 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 .contact__details { display: flex; flex-direction: column; gap: .7rem; min-width: 0; }
 .contact__details a,
 .contact__details span { overflow-wrap: anywhere; color: var(--ink); font-size: .78rem; line-height: 1.3; text-decoration: none; }
-.contact__details a { text-decoration: underline; text-underline-offset: .25rem; }
+.contact__details a { text-decoration: none; }
 .contact__partner-note { margin: 1.25rem 0 0; color: rgba(255,255,255,.55); font-size: .66rem; line-height: 1.4; }
 
 .back-to-top {
