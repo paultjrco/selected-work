@@ -38,6 +38,7 @@
     ? edition.introduction.titleLines.map((line) => `<span>${line}</span>`).join("")
     : edition.introduction.title;
   intro.innerHTML = `
+    <img class="intro__qr" src="images/qrcode.png" alt="QR code for the PAULTJRCO Pocket Portfolio">
     <div class="intro__content">
       <p class="intro__brand">${edition.brand}</p>
       <p class="eyebrow">${edition.introduction.label}</p>
@@ -54,6 +55,14 @@
     screen.className = "screen screen--project";
     screen.setAttribute("aria-label", `${project.category}: ${project.client}`);
     screen.appendChild(screenCounter(projectIndex + 2));
+
+    const qrShortcut = document.createElement("button");
+    qrShortcut.className = "qr-shortcut";
+    qrShortcut.type = "button";
+    qrShortcut.textContent = "QR Code";
+    qrShortcut.setAttribute("aria-label", "Open Pocket Portfolio QR code");
+    qrShortcut.setAttribute("aria-haspopup", "dialog");
+    screen.appendChild(qrShortcut);
 
     const gallery = document.createElement("div");
     gallery.className = "gallery";
@@ -195,16 +204,10 @@
   `;
   document.body.appendChild(qrDialog);
 
-  const qrShortcut = document.createElement("button");
-  qrShortcut.className = "qr-shortcut";
-  qrShortcut.type = "button";
-  qrShortcut.textContent = "QR Code";
-  qrShortcut.setAttribute("aria-label", "Open Pocket Portfolio QR code");
-  qrShortcut.setAttribute("aria-haspopup", "dialog");
-  document.body.appendChild(qrShortcut);
-
   finalScreen.querySelector(".qr-code").addEventListener("click", () => qrDialog.showModal());
-  qrShortcut.addEventListener("click", () => qrDialog.showModal());
+  document.querySelectorAll(".qr-shortcut").forEach((shortcut) => {
+    shortcut.addEventListener("click", () => qrDialog.showModal());
+  });
   qrDialog.querySelector(".qr-dialog__close").addEventListener("click", () => qrDialog.close());
   qrDialog.addEventListener("click", (event) => {
     const bounds = qrDialog.getBoundingClientRect();
