@@ -1,4 +1,4 @@
-const CACHE_NAME = "pocket-portfolio-spaces-v16";
+const CACHE_NAME = "pocket-portfolio-spaces-v17";
 const ASSETS = [
   "./",
   "index.html",
@@ -22,7 +22,6 @@ const ASSETS = [
   "images/cals-corner-do-not-touch-sign.png",
   "images/custom-cnc.jpg",
   "images/climate-progress-finished-event-display.jpg",
-  "images/IMG_3812.jpg",
   "images/climate-progress-cnc-logo-process.jpg",
   "images/concept-streetcar-touchscreen.jpg",
   "images/concept-pet-care-touchscreen.jpg",

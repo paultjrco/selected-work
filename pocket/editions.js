@@ -122,11 +122,6 @@ window.POCKET_PORTFOLIO_EDITIONS = {
             focus: "top center"
           },
           {
-            src: "../../portfolio/images-web/IMG_3812.jpg",
-            alt: "CNC-cut dimensional sign components arranged during production",
-            focus: "right center"
-          },
-          {
             src: "../../portfolio/images-web/climate-progress-cnc-logo-process.jpg",
             alt: "CNC-routed circular identity component before painting and assembly",
             focus: "center"
