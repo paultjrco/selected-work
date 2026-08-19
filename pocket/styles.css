@@ -244,7 +244,9 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
   place-items: center;
   aspect-ratio: 1;
   padding: 0;
+  border: 0;
   background: transparent;
+  cursor: zoom-in;
 }
 
 .qr-code img {
@@ -358,10 +360,38 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 .product-dialog__cta:hover,
 .product-dialog__cta:focus-visible { background: rgba(255,255,255,.08); }
 
-body:has(.product-dialog[open]) .presentation { overflow: hidden; }
+.qr-dialog {
+  width: min(calc(100% - 2rem), 32rem);
+  padding: .75rem;
+  border: 0;
+  border-radius: .35rem;
+  background: #fff;
+  box-shadow: 0 1.5rem 5rem rgba(0,0,0,.55);
+}
+
+.qr-dialog::backdrop { background: rgba(10,10,9,.82); backdrop-filter: blur(4px); }
+.qr-dialog img { display: block; width: 100%; height: auto; }
+
+.qr-dialog__close {
+  position: absolute;
+  top: .75rem;
+  right: .75rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 50%;
+  color: #111;
+  font-size: 1.6rem;
+  font-weight: 300;
+  background: rgba(255,255,255,.88);
+  cursor: pointer;
+}
+
+body:has(.product-dialog[open], .qr-dialog[open]) .presentation { overflow: hidden; }
 
 @supports not selector(:has(*)) {
-  .product-dialog[open] { position: fixed; }
+  .product-dialog[open],
+  .qr-dialog[open] { position: fixed; }
 }
 
 @media (min-width: 45rem) {

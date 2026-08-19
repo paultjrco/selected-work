@@ -138,9 +138,9 @@
       <h2 id="contact-title">${contact.heading}</h2>
       <p class="contact__body">${contact.body}</p>
       <div class="contact__handoff">
-        <div class="qr-code">
+        <button class="qr-code" type="button" aria-label="Enlarge QR code" aria-haspopup="dialog">
           <img src="images/qrcode.png" alt="QR code for the PAULTJRCO Pocket Portfolio">
-        </div>
+        </button>
         <div class="contact__details">
           <span class="contact__name">${contact.name}</span>
           <a href="mailto:${contact.email}">${contact.email}</a>
@@ -184,6 +184,23 @@
     const bounds = productDialog.getBoundingClientRect();
     const inside = event.clientX >= bounds.left && event.clientX <= bounds.right && event.clientY >= bounds.top && event.clientY <= bounds.bottom;
     if (!inside) productDialog.close();
+  });
+
+  const qrDialog = document.createElement("dialog");
+  qrDialog.className = "qr-dialog";
+  qrDialog.setAttribute("aria-label", "Enlarged Pocket Portfolio QR code");
+  qrDialog.innerHTML = `
+    <button class="qr-dialog__close" type="button" aria-label="Close enlarged QR code">×</button>
+    <img src="images/qrcode.png" alt="QR code for the PAULTJRCO Pocket Portfolio">
+  `;
+  document.body.appendChild(qrDialog);
+
+  finalScreen.querySelector(".qr-code").addEventListener("click", () => qrDialog.showModal());
+  qrDialog.querySelector(".qr-dialog__close").addEventListener("click", () => qrDialog.close());
+  qrDialog.addEventListener("click", (event) => {
+    const bounds = qrDialog.getBoundingClientRect();
+    const inside = event.clientX >= bounds.left && event.clientX <= bounds.right && event.clientY >= bounds.top && event.clientY <= bounds.bottom;
+    if (!inside) qrDialog.close();
   });
 
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
