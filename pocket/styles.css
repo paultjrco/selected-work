@@ -284,7 +284,9 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
   grid-template-columns: minmax(7rem, 34vw) 1fr;
   gap: 1.25rem;
   align-items: center;
-  margin-top: 1.6rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
 }
 
 .qr-code {
