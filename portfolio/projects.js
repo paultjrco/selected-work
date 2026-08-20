@@ -430,8 +430,18 @@ window.PORTFOLIO_DATA = {
         },
         {
           type: "image",
+          src: "portfolio/images-web/concept-coffee-touchscreen.jpg",
+          alt: "Concept rendering of an interactive coffee-cup touchscreen kiosk"
+        },
+        {
+          type: "image",
           src: "portfolio/images-web/concept-streetcar-touchscreen.jpg",
           alt: "Concept rendering of an interactive San Francisco streetcar-inspired kiosk"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/concept-rock-climbing-touchscreen.jpg",
+          alt: "Concept rendering of a rock-inspired touchscreen kiosk for a climbing business"
         },
         {
           type: "image",
