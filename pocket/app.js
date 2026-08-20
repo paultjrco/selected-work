@@ -146,16 +146,16 @@
     <div class="contact__content">
       <p class="eyebrow">${contact.brand}</p>
       <h2 id="contact-title" aria-label="${contact.heading}"><span class="contact-title__lead">${contact.headingLead || "Let’s make something"}</span><span class="rotating-word-frame" aria-hidden="true"><span class="rotating-word">${headingWords[0]}</span></span><span aria-hidden="true">.</span></h2>
-      <p class="contact__body">${contact.body}</p>
       <div class="contact__handoff">
         <button class="qr-code" type="button" aria-label="Enlarge QR code" aria-haspopup="dialog">
           <img src="images/qrcode.png" alt="QR code for the PAULTJRCO Pocket Portfolio">
         </button>
         <div class="contact__details">
           <span class="contact__name">${contact.name}</span>
+          <span class="contact__tagline">${contact.body}</span>
           <a href="mailto:${contact.email}">${contact.email}</a>
           <a href="tel:${contact.phoneHref}">${contact.phoneDisplay}</a>
-          <span>${contact.url}</span>
+          <span class="contact__url">${contact.url}</span>
         </div>
       </div>
     </div>

@@ -248,7 +248,8 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 .contact__content { max-width: 32rem; }
 .screen--contact { padding-bottom: calc(var(--safe-bottom) + 7.5rem); }
 .screen--contact h2 { font-size: clamp(1.85rem, 9vw, 4rem); line-height: 1.12; }
-.contact__details .contact__name { font-size: .92rem; font-weight: 700; }
+.contact__details .contact__name { color: var(--ink); font-size: 1rem; font-weight: 700; }
+.contact__details .contact__tagline { color: rgba(255,255,255,.68); font-size: .74rem; }
 
 .contact-title__lead { display: block; white-space: nowrap; }
 
@@ -302,6 +303,8 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: invert(1);
+  mix-blend-mode: screen;
 }
 
 .qr-shortcut {
@@ -323,9 +326,9 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
 .qr-shortcut:hover,
 .qr-shortcut:focus-visible { color: rgba(255,255,255,.9); }
 
-.contact__details { display: flex; flex-direction: column; gap: .7rem; min-width: 0; }
+.contact__details { display: flex; flex-direction: column; gap: .55rem; min-width: 0; }
 .contact__details a,
-.contact__details span { overflow-wrap: anywhere; color: var(--ink); font-size: .78rem; line-height: 1.3; text-decoration: none; }
+.contact__details span { overflow-wrap: anywhere; color: rgba(255,255,255,.5); font-size: .68rem; line-height: 1.3; text-decoration: none; }
 .contact__details a { text-decoration: none; }
 .contact__footer {
   position: absolute;
