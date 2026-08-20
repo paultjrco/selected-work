@@ -1,4 +1,4 @@
-const CACHE_NAME = "pocket-portfolio-spaces-v38";
+const CACHE_NAME = "pocket-portfolio-spaces-v39";
 const ASSETS = [
   "./",
   "index.html",
