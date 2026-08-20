@@ -295,7 +295,6 @@ h2 { font-size: clamp(2.15rem, 10vw, 4rem); line-height: 1; }
   border-radius: .65rem;
   background: transparent;
   cursor: zoom-in;
-  overflow: hidden;
 }
 
 .qr-code img {
