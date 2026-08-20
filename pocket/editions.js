@@ -71,11 +71,6 @@ window.POCKET_PORTFOLIO_EDITIONS = {
             src: "../../portfolio/images-web/modular-backdrop-wedding-couple-blurred.jpg",
             alt: "Custom modular wooden backdrop in use at a wedding, with the couple blurred so the structure remains the visual focus",
             focus: "top center"
-          },
-          {
-            src: "../../portfolio/images-web/modular-backdrop-concept-render.jpg",
-            alt: "Concept rendering based on Paul’s sketch showing the freestanding modular wooden backdrop and reusable bolted construction",
-            focus: "center"
           }
         ]
       },
