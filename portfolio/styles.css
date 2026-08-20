@@ -237,6 +237,18 @@ h1 {
   object-fit: contain;
 }
 
+.project__link {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding-bottom: .2rem;
+  border-bottom: 1px solid currentColor;
+  color: var(--accent);
+  font-size: .78rem;
+  letter-spacing: .06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .project__media-nav {
   display: inline-grid;
   place-items: center;

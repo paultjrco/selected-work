@@ -1,6 +1,36 @@
 window.PORTFOLIO_DATA = {
   projects: [
     {
+      id: "pocket-portfolio",
+      title: "Pocket Portfolio — Mobile Presentation Product",
+      context: "Independent / paultjrco · Mobile-first interactive presentation",
+      status: "Published",
+      image: "portfolio/images-web/pocket-portfolio-mobile-poster.png",
+      alt: "Opening screen of the Pocket Portfolio mobile presentation product",
+      media: [
+        {
+          type: "video",
+          src: "portfolio/videos-web/pocket-portfolio-demo.mp4",
+          mimeType: "video/mp4",
+          poster: "portfolio/images-web/pocket-portfolio-mobile-poster.png",
+          label: "Pocket Portfolio interaction demo"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/pocket-portfolio-mobile-poster.png",
+          alt: "Opening screen of the Pocket Portfolio mobile presentation product",
+          fit: "contain"
+        }
+      ],
+      description: [
+        "Conceived, designed, and built a mobile-first presentation product for in-person business conversations. The experience behaves like a compact slide deck: vertical navigation moves between service stories, horizontal galleries reveal supporting media, and a final QR handoff lets another person open the presentation on their own device.",
+        "Developed the interaction model, responsive visual system, configurable editions, touch and keyboard navigation, focal-point controls, modal QR and inquiry flows, offline caching, and a reusable white-label structure. Iterative testing on mobile refined hierarchy, gestures, cropping, animation, contact handoff, and presentation pacing."
+      ],
+      capabilities: ["Mobile interaction design", "Retail-style demos", "Responsive UI", "Presentation systems", "Offline experience", "HTML, CSS & JavaScript"],
+      tags: ["ux-ui", "mobile", "interactive-demo", "presentation", "responsive", "qr", "offline", "prototyping"],
+      url: "https://paultjrco.github.io/selected-work/pocket/"
+    },
+    {
       id: "dayspring-events",
       title: "Events, Wayfinding & Environmental Graphics",
       context: "Dayspring Partners · Workplace and event experience design",
@@ -13,6 +43,11 @@ window.PORTFOLIO_DATA = {
           src: "portfolio/images-web/dayspring-anniversary-projected-timeline.jpg",
           alt: "Projected company-history timeline designed for Dayspring's twentieth-anniversary celebration",
           fit: "contain"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/dayspring-event-self-running-kiosk.jpg",
+          alt: "Self-running kiosk presentation supporting guest exploration at the Dayspring anniversary event"
         },
         {
           type: "image",
@@ -342,13 +377,23 @@ window.PORTFOLIO_DATA = {
       id: "modular-wedding-arch",
       title: "Modular Wedding Arch & Backdrop",
       status: "Completed · Reused across multiple events",
-      description: "Designed and fabricated a hardwood wedding arch/backdrop that gives florists a stable structure for flowers and drapery. Developed the frame for repeated assembly, disassembly, and transport using threaded inserts and tee nuts so its fasteners can be removed many times without degrading the wood; finished and sealed the hardwood with stain. The system has been used successfully at multiple weddings.",
-      capabilities: ["Modular design", "Hardwood fabrication", "Reusable joinery", "Transport planning", "Finish work"],
+      description: "Designed and fabricated a hardwood wedding arch/backdrop that gives florists a stable structure for flowers and drapery. Developed the frame for repeated assembly, disassembly, and transport using threaded inserts and tee nuts so its fasteners can be removed many times without degrading the wood; finished and sealed the hardwood with stain. The system has been used successfully at multiple weddings and demonstrates an adaptable approach for custom branded photo opportunities and event backdrops.",
+      capabilities: ["Custom backdrops", "Modular design", "Hardwood fabrication", "Reusable joinery", "Transport planning", "Finish work"],
       media: [
         {
           type: "image",
           src: "portfolio/images-web/modular-wedding-arch-joinery.jpg",
           alt: "Corner of the modular hardwood wedding arch showing its bracing and reusable bolted joinery"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/modular-backdrop-wedding-couple-blurred.jpg",
+          alt: "Modular wooden backdrop in use at a wedding, with the couple blurred so the structure remains the focus"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/modular-backdrop-concept-render.jpg",
+          alt: "Concept rendering based on Paul’s sketch showing the freestanding modular backdrop structure"
         }
       ]
     },
@@ -375,8 +420,25 @@ window.PORTFOLIO_DATA = {
       id: "vendor-assistant",
       title: "Vendor Assistant — Modular Engagement Touchscreen",
       status: "Ongoing",
-      description: "Developing a modular touchscreen experience for vendors and small businesses to use at tabling events or in business lobbies, helping visitors explore information, interact with the organization, and make a connection. The interface and system concept incorporate Figma, a Raspberry Pi, and a capacitive display; the custom physical enclosure has not yet been completed.",
-      capabilities: ["Visitor engagement", "Figma", "Raspberry Pi", "Touch interaction", "Physical/digital prototyping"]
+      description: "Developing a modular touchscreen experience for vendors and small businesses to use at tabling events or in business lobbies, helping visitors explore information, interact with the organization, and make a connection. The interface and system concept incorporate Figma, a Raspberry Pi, and a capacitive display. Concept studies compare display-only and touch configurations and explore context-specific sculptural enclosures; the custom physical enclosure has not yet been completed.",
+      capabilities: ["Visitor engagement", "Concept visualization", "Figma", "Raspberry Pi", "Touch interaction", "Physical/digital prototyping"],
+      media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/concept-display-touchscreen-options.jpg",
+          alt: "Concept rendering comparing display-only and touchscreen configurations"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/concept-streetcar-touchscreen.jpg",
+          alt: "Concept rendering of an interactive San Francisco streetcar-inspired kiosk"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/concept-pet-care-touchscreen.jpg",
+          alt: "Concept rendering of a tree-stump touchscreen enclosure for a pet-care business"
+        }
+      ]
     },
     {
       id: "ai-work-log",
@@ -405,6 +467,68 @@ window.PORTFOLIO_DATA = {
       description: "Owned an independent product concept from research and strategy through detailed Figma systems, realistic data structures, reporting, and AI-assisted workflows. Iterative scope decisions focused the experience on treatment adherence and clear caregiver feedback.",
       capabilities: ["Independent ownership", "Figma systems", "AI-assisted research", "Information design"],
       url: "https://www.paultjr.com/case_study/familyhealthtracker/"
+    },
+    {
+      id: "plinko-game",
+      title: "Interactive Plinko Game",
+      status: "Completed · Concept view shown",
+      description: "Designed and built an LED-lit Plinko board with a rotating puck-release mechanism for participatory event use. The uploaded SketchUp view documents the freestanding game structure and peg-field layout.",
+      capabilities: ["Interactive experiences", "SketchUp", "Game design", "Physical fabrication", "Event engagement"],
+      media: [{
+        type: "image",
+        src: "portfolio/images-web/plinko-concept.png",
+        alt: "SketchUp concept view of a freestanding Plinko game with a field of pegs"
+      }]
+    },
+    {
+      id: "rise-stage-risers",
+      title: "Rise University Prep Stage Risers",
+      status: "Completed",
+      description: "Designed and constructed multi-purpose wooden stage risers for a Shakespeare production at Rise University Prep, carrying the work from spatial planning and component layouts through fabrication and installation.",
+      capabilities: ["Spatial planning", "SketchUp", "Stage fabrication", "Woodworking", "Installation"],
+      media: [{
+        type: "image",
+        src: "portfolio/images-web/rise-stage-riser-concept.png",
+        alt: "SketchUp planning view showing stage-riser assemblies and component layouts"
+      }]
+    },
+    {
+      id: "cat-shelter",
+      title: "Cat Shelter and Feeding Structure",
+      status: "Completed",
+      description: "Designed and built a cedar and redwood shelter combining protected housing and feeding functions for feral cats. Used 3D studies to work through the tiered structure, access, proportions, and build approach as part of a potential customizable product line.",
+      capabilities: ["Product concept", "SketchUp", "Outdoor structures", "Wood fabrication", "Functional design"],
+      media: [{
+        type: "image",
+        src: "portfolio/images-web/cat-shelter-concept.png",
+        alt: "SketchUp concept of a tiered cat shelter and feeding structure"
+      }]
+    },
+    {
+      id: "bathroom-remodel",
+      title: "Compact Bathroom Remodel Planning",
+      status: "Planning and visualization",
+      description: "Created measured 3D studies to plan a compact bathroom remodel, compare spatial arrangements, coordinate fixture clearances, and communicate the proposed layout before construction decisions.",
+      capabilities: ["Measured planning", "SketchUp", "Space planning", "Fixture layout", "Concept visualization"],
+      media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/bathroom-remodel-planning.png",
+          alt: "Measured SketchUp planning model for a compact bathroom remodel"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/bathroom-remodel-concept.png",
+          alt: "SketchUp bathroom-remodel concept showing shower, vanity, storage, and finishes"
+        }
+      ]
+    },
+    {
+      id: "goodbudget",
+      title: "Goodbudget Household Budgeting Application",
+      description: "Led UI and visual design for the initial 0-to-1 mobile application across iPhone, Android, and web. Designed onboarding and core financial interactions, evolved the mascot and logo across multiple generations, created app-store and marketing graphics, and collaborated with product and engineering on production-ready behavior and assets.",
+      capabilities: ["Consumer product UX", "Visual systems", "Mobile UI", "Brand stewardship", "Production assets"],
+      url: "https://www.paultjr.com/wp-content/uploads/2024/03/selectedWork-usVis-tomanpos-paul-0324.pdf"
     }
   ],
   collections: {
@@ -417,7 +541,8 @@ window.PORTFOLIO_DATA = {
         "randall-core-samples",
         "asian-art-seating",
         "climate-progress"
-      ]
+      ],
+      relatedProjectIds: ["plinko-game", "rise-stage-risers", "cat-shelter", "bathroom-remodel"]
     },
     museum: {
       title: "Experiences built for public spaces.",
@@ -438,7 +563,8 @@ window.PORTFOLIO_DATA = {
         "asian-art-seating",
         "climate-progress",
         "cals-corner"
-      ]
+      ],
+      relatedProjectIds: ["rise-stage-risers", "cat-shelter", "plinko-game", "bathroom-remodel"]
     },
     "212073": {
       title: "Thinking it through. Making it real.",
@@ -461,6 +587,24 @@ window.PORTFOLIO_DATA = {
         "matchwell",
         "field-guides",
         "family-health-tracker"
+      ]
+    },
+    "212080": {
+      title: "Demos that invite interaction.",
+      titleLines: ["Demos that invite", "interaction."],
+      audience: "Aquent · Interactive Designer — Retail Demos",
+      summary: "Interactive product stories shaped through mobile UX, self-running presentations, visual systems, responsive prototyping, and production-minded design across digital screens and physical environments.",
+      projectIds: [
+        "pocket-portfolio",
+        "dayspring-events",
+        "brown-bear-tree"
+      ],
+      relatedProjectIds: [
+        "goodbudget",
+        "matchwell",
+        "field-guides",
+        "family-health-tracker",
+        "vendor-assistant"
       ]
     },
     "276818": {

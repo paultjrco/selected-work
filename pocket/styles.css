@@ -77,15 +77,6 @@ a { font: inherit; }
   transform: translateY(4vh);
 }
 
-.intro__qr {
-  position: absolute;
-  top: var(--safe-top);
-  left: 1.25rem;
-  width: 7.25rem;
-  height: 7.25rem;
-  filter: invert(1);
-  mix-blend-mode: screen;
-}
 .intro__brand {
   margin: 0 0 clamp(4rem, 17vh, 8rem);
   font-size: clamp(1rem, 5vw, 1.35rem);
@@ -468,7 +459,6 @@ body:has(.product-dialog[open], .qr-dialog[open]) .presentation { overflow: hidd
 @media (min-width: 45rem) {
   .screen { padding-right: max(7vw, 2rem); padding-left: max(7vw, 2rem); }
   .screen__counter { right: max(7vw, 2rem); }
-  .intro__qr { left: max(7vw, 2rem); }
   .qr-shortcut { left: max(7vw, 2rem); }
   .project-copy,
   .gallery__controls { right: max(7vw, 2rem); left: max(7vw, 2rem); }

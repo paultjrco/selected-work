@@ -38,7 +38,7 @@
     ? edition.introduction.titleLines.map((line) => `<span>${line}</span>`).join("")
     : edition.introduction.title;
   intro.innerHTML = `
-    <img class="intro__qr" src="images/qrcode.png" alt="QR code for the PAULTJRCO Pocket Portfolio">
+    <button class="qr-shortcut" type="button" aria-label="Open Pocket Portfolio QR code" aria-haspopup="dialog">QR Code</button>
     <div class="intro__content">
       <p class="intro__brand">${edition.brand}</p>
       <p class="eyebrow">${edition.introduction.label}</p>

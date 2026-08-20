@@ -146,7 +146,7 @@
 
         const source = document.createElement("source");
         source.src = media.src;
-        source.type = "video/x-m4v";
+        source.type = media.mimeType || (media.src.toLowerCase().endsWith(".mp4") ? "video/mp4" : "video/x-m4v");
         video.appendChild(source);
         mediaWrap.appendChild(video);
 
@@ -243,6 +243,16 @@
       });
 
       content.appendChild(capabilities);
+    }
+
+    if (project.url) {
+      const link = document.createElement("a");
+      link.className = "project__link";
+      link.href = project.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = "Open live experience";
+      content.appendChild(link);
     }
 
     article.append(mediaSlider, content);
