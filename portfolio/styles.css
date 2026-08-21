@@ -182,13 +182,13 @@ h1 {
 
 .project {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
   gap: clamp(32px, 6vw, 72px);
   align-items: center;
 }
 
 .project:nth-child(even) {
-  grid-template-columns: minmax(280px, 0.6fr) minmax(0, 1.4fr);
+  grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.08fr);
 }
 
 .project:nth-child(even) .project__media-slider {
