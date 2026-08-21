@@ -199,6 +199,10 @@ h1 {
   grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
 }
 
+.project--pocket-portfolio .project__media-track {
+  aspect-ratio: auto;
+}
+
 .project--dayspring-events {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
