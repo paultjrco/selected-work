@@ -425,18 +425,23 @@ window.PORTFOLIO_DATA = {
       media: [
         {
           type: "image",
+          src: "portfolio/images-web/vendor-assistant-primary.jpg",
+          alt: "Vendor Assistant touchscreen display on a compact branded wooden base"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/vendor-assistant-streetcar-concept.jpg",
+          alt: "Concept rendering of an interactive San Francisco streetcar-inspired kiosk"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/vendor-assistant-coffee-concept.jpg",
+          alt: "Concept rendering of an interactive coffee-cup touchscreen kiosk in a café setting"
+        },
+        {
+          type: "image",
           src: "portfolio/images-web/concept-display-touchscreen-options.jpg",
           alt: "Concept rendering comparing display-only and touchscreen configurations"
-        },
-        {
-          type: "image",
-          src: "portfolio/images-web/concept-coffee-touchscreen.jpg",
-          alt: "Concept rendering of an interactive coffee-cup touchscreen kiosk"
-        },
-        {
-          type: "image",
-          src: "portfolio/images-web/concept-streetcar-touchscreen.jpg",
-          alt: "Concept rendering of an interactive San Francisco streetcar-inspired kiosk"
         },
         {
           type: "image",
