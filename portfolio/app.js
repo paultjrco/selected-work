@@ -106,7 +106,7 @@
 
   selectedProjects.forEach((project, index) => {
     const article = document.createElement("article");
-    article.className = "project";
+    article.className = `project project--${project.id}`;
 
     const mediaItems = project.media || [
       {
