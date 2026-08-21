@@ -118,9 +118,14 @@ window.PORTFOLIO_DATA = {
       title: "Faux Tree Retail Environment",
       context: "Brown Bear Toys · Experiential fabrication",
       status: "Completed",
-      image: "portfolio/images-web/123_1 2.jpeg",
-      alt: "Completed artificial tree installation framing a doorway inside a toy store",
+      image: "portfolio/images-web/faux-tree-finished-wide.jpg",
+      alt: "Wide finished view of the faux tree framing the retail doorway, including both trunks and the complete leafy canopy",
       media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/faux-tree-finished-wide.jpg",
+          alt: "Wide finished view of the faux tree framing the retail doorway, including both trunks and the complete leafy canopy"
+        },
         {
           type: "image",
           src: "portfolio/images-web/123_1 2.jpeg",
@@ -157,11 +162,6 @@ window.PORTFOLIO_DATA = {
           type: "image",
           src: "portfolio/images-web/faux-tree-base-detail-process.jpg",
           alt: "Finished faux tree base detail with textured bark, sculpted roots and rocks, moss, and planted accents"
-        },
-        {
-          type: "image",
-          src: "portfolio/images-web/faux-tree-finished-wide.jpg",
-          alt: "Wide finished view of the faux tree framing the retail doorway, including both trunks and the complete leafy canopy"
         }
       ],
       description: [
