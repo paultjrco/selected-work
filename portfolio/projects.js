@@ -674,6 +674,23 @@ window.PORTFOLIO_DATA = {
         "matchwell",
         "family-health-tracker"
       ]
+    },
+    "294616": {
+      title: "Financial experiences, grounded in real customer needs.",
+      titleLines: ["Financial experiences,", "grounded in real customer needs."],
+      audience: "Bank of America · Experience Design (XD) I, Product Design",
+      summary: "Consumer-facing product design across finance, complex transactional workflows, responsive web and mobile experiences, research, design systems, and AI-assisted production—supported by prior Bank of America experience as a Senior Bank / Merchant Teller.",
+      relatedLabel: "Selected case studies",
+      relatedTitle: "Product work for complex, consequential experiences.",
+      relatedSummary: "Five projects demonstrating consumer finance, multi-sided workflows, responsive systems, research-led product decisions, developer collaboration, and practical AI integration.",
+      projectIds: [],
+      relatedProjectIds: [
+        "goodbudget",
+        "matchwell",
+        "family-health-tracker",
+        "ai-work-log",
+        "field-guides"
+      ]
     }
   }
 };

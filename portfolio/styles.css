@@ -173,6 +173,10 @@ h1 {
   padding-bottom: clamp(96px, 14vw, 168px);
 }
 
+.projects:empty {
+  padding-bottom: 0;
+}
+
 .noscript {
   margin-bottom: 80px;
   padding: 20px;

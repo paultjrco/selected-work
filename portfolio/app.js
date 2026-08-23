@@ -20,7 +20,13 @@
   const selectedProjects = requestedIds
     .map((id) => projectsById.get(id))
     .filter(Boolean);
-  const presentation = selectedProjects.length
+  const relatedProjectsById = new Map((data.relatedProjects || []).map((project) => [project.id, project]));
+  const hasRelatedProjects = Boolean(
+    collection &&
+    collection.relatedProjectIds &&
+    collection.relatedProjectIds.some((id) => relatedProjectsById.has(id))
+  );
+  const presentation = selectedProjects.length || hasRelatedProjects
     ? collection || defaultCollection
     : null;
 
@@ -41,9 +47,8 @@
   addCloudTerms(selectedProjects, 2);
 
   if (collection && collection.relatedProjectIds) {
-    const relatedById = new Map((data.relatedProjects || []).map((project) => [project.id, project]));
     addCloudTerms(
-      collection.relatedProjectIds.map((id) => relatedById.get(id)).filter(Boolean),
+      collection.relatedProjectIds.map((id) => relatedProjectsById.get(id)).filter(Boolean),
       1
     );
   }
@@ -264,9 +269,8 @@
   const relatedIds = collection && collection.relatedProjectIds
     ? collection.relatedProjectIds
     : [];
-  const relatedById = new Map((data.relatedProjects || []).map((project) => [project.id, project]));
   const relatedProjects = relatedIds
-    .map((id) => relatedById.get(id))
+    .map((id) => relatedProjectsById.get(id))
     .filter(Boolean);
 
   if (relatedProjects.length) {
@@ -279,14 +283,14 @@
 
     const eyebrow = document.createElement("p");
     eyebrow.className = "eyebrow";
-    eyebrow.textContent = "Additional experience";
+    eyebrow.textContent = collection.relatedLabel || "Additional experience";
 
     const relatedHeading = document.createElement("h2");
     relatedHeading.id = "related-projects-title";
-    relatedHeading.textContent = "More relevant work";
+    relatedHeading.textContent = collection.relatedTitle || "More relevant work";
 
     const relatedSummary = document.createElement("p");
-    relatedSummary.textContent = "Additional projects demonstrating digital prototyping, visual systems, AI experimentation, and the connection between interface design and real-world use.";
+    relatedSummary.textContent = collection.relatedSummary || "Additional projects demonstrating digital prototyping, visual systems, AI experimentation, and the connection between interface design and real-world use.";
     relatedIntro.append(eyebrow, relatedHeading, relatedSummary);
 
     const relatedList = document.createElement("div");
