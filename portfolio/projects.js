@@ -597,8 +597,7 @@ window.PORTFOLIO_DATA = {
         "Built reusable design systems and worked directly through implementation",
         "Mentored designers and supported usability studies and A/B testing"
       ],
-      capabilities: ["Consumer finance UX", "0-to-1 product design", "Transactional workflows", "Cross-platform UI", "Design systems", "Figma", "Front-end collaboration"],
-      url: "https://www.paultjr.com/wp-content/uploads/2024/03/selectedWork-usVis-tomanpos-paul-0324.pdf"
+      capabilities: ["Consumer finance UX", "0-to-1 product design", "Transactional workflows", "Cross-platform UI", "Design systems", "Figma", "Front-end collaboration"]
     }
   ],
   collections: {
