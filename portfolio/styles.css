@@ -460,6 +460,10 @@ h1 {
   object-fit: cover;
 }
 
+.related-project__media-item img.related-project__media--contain {
+  object-fit: contain;
+}
+
 .related-project h3 {
   margin: 0 0 12px;
   font-family: Georgia, "Times New Roman", serif;

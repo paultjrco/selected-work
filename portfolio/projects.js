@@ -543,6 +543,44 @@ window.PORTFOLIO_DATA = {
       title: "Goodbudget Household Budgeting Application",
       context: "Dayspring Partners · Product Designer / Lead Visual Designer · 2009–2023",
       status: "14 years with the product",
+      media: [
+        {
+          type: "image",
+          src: "portfolio/images-web/goodbudget-web-dashboard.png",
+          alt: "Goodbudget web dashboard showing envelope balances, transaction controls, and recent activity",
+          fit: "contain"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/goodbudget-transaction-selection.jpg",
+          alt: "Goodbudget transaction-management screen with a selected transaction and bulk action controls",
+          fit: "contain"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/goodbudget-mobile-envelopes-report.png",
+          alt: "Goodbudget iPhone screens showing envelope balances and a color-coded spending report",
+          fit: "contain"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/goodbudget-budget-allocation-report.png",
+          alt: "Goodbudget budget-allocation report combining a pie chart with detailed envelope values",
+          fit: "contain"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/goodbudget-identity.png",
+          alt: "Early Goodbudget identity with the envelope mascot, integrated wordmark, and Formerly EEBA label",
+          fit: "contain"
+        },
+        {
+          type: "image",
+          src: "portfolio/images-web/goodbudget-mascot-podcast.png",
+          alt: "Goodbudget Way podcast artwork featuring the illustrated envelope mascot",
+          fit: "contain"
+        }
+      ],
       description: [
         "Joined Goodbudget when its envelope-budgeting concept was a developer-built prototype called EEBA and spent 14 years helping it become and evolve as a public consumer product. Established early hierarchy, layouts, supporting interfaces, workflows, and visual language while translating financial concepts, technical requirements, stakeholder ideas, and rough sketches into experiences that made sense to people learning how to budget.",
         "Designed across web, Android, and iPhone, including budget and envelope creation, financial status and visualization, transaction management, bulk reconciliation, responsive layouts, empty states, and supporting UI. One reconciliation workflow evolved from dragging imported transactions into literal envelopes to a more efficient list-based model for reviewing, selecting, and assigning transaction groups.",

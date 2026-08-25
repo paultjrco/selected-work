@@ -309,12 +309,13 @@
         mediaTrack.className = "related-project__media-track";
         const renderedMedia = [];
 
-        project.media.slice(0, 3).forEach((media, mediaIndex) => {
+        project.media.slice(0, 8).forEach((media, mediaIndex) => {
           const mediaWrap = document.createElement("figure");
           mediaWrap.className = "related-project__media-item";
           mediaWrap.hidden = mediaIndex !== 0;
 
           const image = document.createElement("img");
+          image.className = media.fit === "contain" ? "related-project__media--contain" : "";
           image.src = media.src;
           image.alt = media.alt || "";
           image.loading = "lazy";
