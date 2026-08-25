@@ -540,9 +540,9 @@ window.PORTFOLIO_DATA = {
     },
     {
       id: "goodbudget",
-      title: "Goodbudget Household Budgeting Application",
+      title: "Goodbudget — From Prototype to Consumer Product",
       context: "Dayspring Partners · Product Designer / Lead Visual Designer · 2009–2023",
-      status: "14 years with the product",
+      status: "14-year product contribution",
       media: [
         {
           type: "image",
@@ -582,20 +582,20 @@ window.PORTFOLIO_DATA = {
         }
       ],
       description: [
-        "Joined Goodbudget when its envelope-budgeting concept was a developer-built prototype called EEBA and spent 14 years helping it become and evolve as a public consumer product. Established early hierarchy, layouts, supporting interfaces, workflows, and visual language while translating financial concepts, technical requirements, stakeholder ideas, and rough sketches into experiences that made sense to people learning how to budget.",
-        "Designed across web, Android, and iPhone, including budget and envelope creation, financial status and visualization, transaction management, bulk reconciliation, responsive layouts, empty states, and supporting UI. One reconciliation workflow evolved from dragging imported transactions into literal envelopes to a more efficient list-based model for reviewing, selecting, and assigning transaction groups.",
-        "Helped rename EEBA to Goodbudget, designed the identity and envelope-based logo, and illustrated mascot expressions that added an emotional layer to financial feedback. Although later designers restyled the character, the original eyes, eyebrows, and mouth expressions remained part of the product more than a decade later.",
-        "Built reusable typography, color, component, illustration, and brand systems; designed customer-facing store, marketing, sales, partner, and support assets; and worked directly with developers through implementation. Contributed HTML and CSS, created branded third-party experiences, ran lightweight usability and A/B evaluations, and later mentored designers and supported more structured testing.",
-        "Goodbudget now reports more than 2 million downloads and approximately a 4.6-star rating from 13,000 ratings. Those are broader team and product outcomes accumulated over many years, including work after my 2023 departure; my contribution was helping establish and evolve the consumer experience, interface language, identity, mascot, design systems, and numerous web and mobile features."
+        "Over 14 years, I helped transform Goodbudget from a developer-built prototype called EEBA into an approachable consumer product used across web, Android, and iPhone. I shaped the experience from its early foundation—establishing its visual hierarchy, interface language, workflows, and brand—and continued evolving features, systems, and customer touchpoints as the product and design team grew.",
+        "My most important contribution was making financial complexity feel understandable. I translated budgeting concepts, technical requirements, stakeholder ideas, and rough sketches into polished experiences for everyday people, including users learning to budget for the first time. That meant designing clear budget and envelope creation, financial feedback, reports, transaction management, responsive layouts, empty states, and platform-appropriate interactions. I also helped replace a clever but cumbersome drag-to-envelope reconciliation concept with a faster list-based workflow for reviewing and assigning groups of imported transactions.",
+        "I helped give the product a name and personality. As part of the small team that renamed EEBA to Goodbudget, I designed the new identity, envelope-based logo, and an expressive mascot that made financial feedback feel more human. The character could celebrate progress, express concern, or react when spending moved off track. Later designers refreshed its overall style, but the eyes, eyebrows, and mouths I originally illustrated remained in the product more than a decade later—an enduring piece of the experience users came to recognize and respond to.",
+        "I designed through implementation, not just handoff. I built reusable typography, color, component, illustration, and brand systems; partnered directly with developers to resolve responsive behavior, transitions, content edge cases, and visual accuracy; and contributed HTML and CSS when useful. For many years I was the product's sole designer when UX or visual needs arose. As the team expanded, I gave newer designers a coherent system to build from, reviewed and mentored their work, and supported usability studies and A/B testing with production-ready screens and variants.",
+        "Today, Goodbudget reports more than 2 million downloads and approximately a 4.6-star rating from 13,000 ratings. Those results belong to the broader team and reflect years of continued work, including after I left Dayspring in 2023. My contribution was foundational and sustained: helping turn the original idea into a credible consumer experience, then strengthening the product through its interface, identity, emotional feedback, cross-platform systems, implementation, and design continuity."
       ],
       highlights: [
-        "Prototype-to-product transformation",
-        "Consumer finance and transactional UX",
-        "Web, Android, and iPhone design",
-        "Naming, identity, mascot, and emotional feedback",
-        "Reusable cross-platform design systems",
-        "Developer collaboration, HTML, and CSS",
-        "User testing, A/B variants, and design mentorship"
+        "14 years shaping and evolving one consumer product",
+        "Helped transform an early prototype into a public-facing experience",
+        "Made complex budgeting and transaction workflows easier to understand",
+        "Designed across web, Android, and iPhone",
+        "Created the Goodbudget identity, logo, mascot, and emotional feedback system",
+        "Built reusable design systems and worked directly through implementation",
+        "Mentored designers and supported usability studies and A/B testing"
       ],
       capabilities: ["Consumer finance UX", "0-to-1 product design", "Transactional workflows", "Cross-platform UI", "Design systems", "Figma", "Front-end collaboration"],
       url: "https://www.paultjr.com/wp-content/uploads/2024/03/selectedWork-usVis-tomanpos-paul-0324.pdf"
