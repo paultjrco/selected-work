@@ -371,8 +371,13 @@
       const heading = document.createElement("h3");
       heading.textContent = project.title;
 
-      const description = document.createElement("p");
-      description.textContent = project.description;
+      if (project.context) {
+        const context = document.createElement("p");
+        context.className = "related-project__meta";
+        context.textContent = project.context;
+        content.appendChild(context);
+      }
+
       content.appendChild(heading);
 
       if (project.status) {
@@ -382,7 +387,29 @@
         content.appendChild(status);
       }
 
-      content.appendChild(description);
+      const descriptions = Array.isArray(project.description)
+        ? project.description
+        : [project.description];
+
+      descriptions.filter(Boolean).forEach((paragraph) => {
+        const description = document.createElement("p");
+        description.textContent = paragraph;
+        content.appendChild(description);
+      });
+
+      if (project.highlights && project.highlights.length) {
+        const highlights = document.createElement("ul");
+        highlights.className = "related-project__highlights";
+        highlights.setAttribute("aria-label", "Project highlights");
+
+        project.highlights.forEach((highlight) => {
+          const highlightItem = document.createElement("li");
+          highlightItem.textContent = highlight;
+          highlights.appendChild(highlightItem);
+        });
+
+        content.appendChild(highlights);
+      }
 
       if (project.capabilities && project.capabilities.length) {
         const capabilities = document.createElement("ul");

@@ -469,9 +469,31 @@ h1 {
   line-height: 1.15;
 }
 
-.related-project__content > p:not(.related-project__capabilities) {
+.related-project__meta {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-weight: 750;
+  letter-spacing: 0.09em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.related-project__content > p:not(.related-project__meta) {
   margin-bottom: 14px;
   color: #454741;
+}
+
+.related-project__highlights {
+  display: grid;
+  gap: 7px;
+  margin: 22px 0;
+  padding-left: 1.2rem;
+  color: #454741;
+}
+
+.related-project__highlights li::marker {
+  color: var(--accent);
 }
 
 .related-project__status {
