@@ -581,6 +581,7 @@ window.PORTFOLIO_DATA = {
           fit: "contain"
         }
       ],
+      url: "https://www.paultjr.com/case_study/goodbudget/",
       description: [
         "Over 14 years, I helped transform Goodbudget from a developer-built prototype called EEBA into an approachable consumer product used across web, Android, and iPhone. I shaped the experience from its early foundation—establishing its visual hierarchy, interface language, workflows, and brand—and continued evolving features, systems, and customer touchpoints as the product and design team grew.",
         "My most important contribution was making financial complexity feel understandable. I translated budgeting concepts, technical requirements, stakeholder ideas, and rough sketches into polished experiences for everyday people, including users learning to budget for the first time. That meant designing clear budget and envelope creation, financial feedback, reports, transaction management, responsive layouts, empty states, and platform-appropriate interactions. I also helped replace a clever but cumbersome drag-to-envelope reconciliation concept with a faster list-based workflow for reviewing and assigning groups of imported transactions.",
