@@ -425,8 +425,14 @@ window.PORTFOLIO_DATA = {
       media: [
         {
           type: "image",
+          src: "portfolio/images-web/vendor-assistant-tactile.png",
+          alt: "Vendor Assistant hardware prototype displaying the Tactile SF logo on a tabletop screen",
+          fit: "contain"
+        },
+        {
+          type: "image",
           src: "portfolio/images-web/vendor-assistant-primary.jpg",
-          alt: "Vendor Assistant touchscreen display on a compact branded wooden base"
+          alt: "Concept rendering of a Vendor Assistant touchscreen display on a compact branded wooden base"
         },
         {
           type: "image",
