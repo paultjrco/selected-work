@@ -431,33 +431,9 @@ window.PORTFOLIO_DATA = {
         },
         {
           type: "image",
-          src: "portfolio/images-web/vendor-assistant-primary.jpg",
-          alt: "Concept rendering of a Vendor Assistant touchscreen display on a compact branded wooden base"
-        },
-        {
-          type: "image",
-          src: "portfolio/images-web/vendor-assistant-streetcar-concept.jpg",
-          alt: "Concept rendering of an interactive San Francisco streetcar-inspired kiosk"
-        },
-        {
-          type: "image",
-          src: "portfolio/images-web/vendor-assistant-coffee-concept.jpg",
-          alt: "Concept rendering of an interactive coffee-cup touchscreen kiosk in a café setting"
-        },
-        {
-          type: "image",
-          src: "portfolio/images-web/concept-display-touchscreen-options.jpg",
-          alt: "Concept rendering comparing display-only and touchscreen configurations"
-        },
-        {
-          type: "image",
-          src: "portfolio/images-web/concept-rock-climbing-touchscreen.jpg",
-          alt: "Concept rendering of a rock-inspired touchscreen kiosk for a climbing business"
-        },
-        {
-          type: "image",
-          src: "portfolio/images-web/concept-pet-care-touchscreen.jpg",
-          alt: "Concept rendering of a tree-stump touchscreen enclosure for a pet-care business"
+          src: "portfolio/images-web/vendor-assistant-concepts.jpg",
+          alt: "Collage of Vendor Assistant enclosure concepts featuring tabletop, streetcar, tree-stump, coffee-cup, and rock designs",
+          fit: "contain"
         }
       ]
     },
