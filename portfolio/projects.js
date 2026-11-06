@@ -55,6 +55,28 @@ window.PORTFOLIO_DATA = {
       tags: ["signage", "wayfinding", "environmental-graphics", "event-design", "event-planning", "logistics", "invitations", "production", "vendors"]
     },
     {
+      id: "traffic-cone-scenic-prototype",
+      title: "Oversized Traffic Cone — Foam Scenic Prototype",
+      context: "Independent project · Foam fabrication and scenic finishing",
+      status: "Completed",
+      image: "portfolio/images-web/traffic-cone-finished.jpg",
+      alt: "Completed oversized orange and white traffic cone on a black square base",
+      media: [
+        { type: "image", src: "portfolio/images-web/traffic-cone-finished.jpg", alt: "Completed oversized orange and white traffic cone on a black square base" },
+        { type: "image", src: "portfolio/images-web/traffic-cone-fusion.png", alt: "Fusion 360 model of the oversized traffic cone and square base" },
+        { type: "image", src: "portfolio/images-web/traffic-cone-foam-layout.jpg", alt: "Foam panels laid out and shaped for the tapered traffic-cone body" },
+        { type: "image", src: "portfolio/images-web/traffic-cone-assembly.jpg", alt: "Taped and assembled foam cone structure outdoors during shaping" },
+        { type: "image", src: "portfolio/images-web/traffic-cone-cutting.jpg", alt: "Foam panel being cut to shape with a powered saw" },
+        { type: "image", src: "portfolio/images-web/traffic-cone-painting.jpg", alt: "Orange and white scenic paint being applied to the cone" }
+      ],
+      description: [
+        "Designed and fabricated an oversized traffic cone as a sculptural foam build, carrying the project from a Fusion 360 study through panel layout, cutting, assembly, shaping, and scenic painting.",
+        "The project demonstrates the ability to translate a simple visual idea into a large physical form, work through compound tapered geometry, manage foam fabrication and surface preparation, and finish a playful object with a clean, recognizable visual language."
+      ],
+      capabilities: ["Foam fabrication", "Fusion 360", "Pattern development", "Scenic finishing", "Large-scale prop construction"],
+      tags: ["fabrication", "foam", "scenic", "prop", "prototype", "finishing"]
+    },
+    {
       id: "house-number-signage",
       title: "Custom Residential House-Number Sign",
       context: "Private residence · Dimensional signage design and fabrication",
@@ -197,6 +219,7 @@ window.PORTFOLIO_DATA = {
     prototype: { title: "Physical ideas, made tangible.", summary: "A focused selection of experiential design, prototyping, fabrication, and installation work.", projectIds: ["brown-bear-tree", "cals-corner", "randall-core-samples", "asian-art-seating", "climate-progress"], relatedProjectIds: ["plinko-game", "rise-stage-risers", "cat-shelter", "bathroom-remodel"] },
     museum: { title: "Experiences built for public spaces.", summary: "Selected museum, educational, and interactive work shaped through prototyping, fabrication, and careful installation.", projectIds: ["randall-core-samples", "asian-art-installations", "asian-art-seating", "cals-corner"] },
     fabrication: { title: "From material study to finished environment.", summary: "Hands-on work spanning scenic construction, woodworking, dimensional graphics, finishing, and installation.", projectIds: ["brown-bear-tree", "asian-art-installations", "asian-art-seating", "climate-progress", "cals-corner"], relatedProjectIds: ["rise-stage-risers", "cat-shelter", "plinko-game", "bathroom-remodel"] },
+    "joey-the-cat": { title: "Built for attention. Made to last.", titleLines: ["Built for attention.", "Made to last."], audience: "Joey the Cat · Experiential Fabricator / Designer", summary: "Hands-on scenic fabrication, foam modeling, modular construction, dimensional graphics, and finish work for playful environments that need to look great and hold up in the real world.", projectIds: ["traffic-cone-scenic-prototype", "brown-bear-tree", "cals-corner", "climate-progress", "asian-art-seating", "asian-art-installations"], relatedProjectIds: ["modular-wedding-arch", "rise-stage-risers", "house-number-sign", "plinko-game"], relatedLabel: "Additional fabrication work", relatedTitle: "More built work", relatedSummary: "Additional examples of construction planning, reusable structures, dimensional fabrication, and interactive physical experiences." },
     "212073": { title: "Thinking it through. Making it real.", titleLines: ["Thinking it through.", "Making it real."], audience: "Aquent · Retail Store Design Prototyper", summary: "A designer’s eye, User Experience (UX) instincts, and a prototyper’s hands—turning ambiguous ideas into testable digital and physical experiences.", projectIds: ["brown-bear-tree", "randall-core-samples", "asian-art-installations", "climate-progress", "asian-art-seating", "cals-corner"], relatedProjectIds: ["house-number-sign", "modular-wedding-arch", "vendor-assistant", "ai-work-log", "matchwell", "field-guides", "family-health-tracker"] },
     "212080": { title: "Demos that invite interaction.", titleLines: ["Demos that invite", "interaction."], audience: "Aquent · Interactive Designer — Retail Demos", summary: "Interactive product stories shaped through mobile UX, self-running presentations, visual systems, responsive prototyping, and production-minded design across digital screens and physical spaces.", projectIds: ["pocket-portfolio", "dayspring-events", "brown-bear-tree"], relatedProjectIds: ["goodbudget", "matchwell", "field-guides", "family-health-tracker", "vendor-assistant"] },
     "276818": { title: "Clear spaces. Strong signals.", titleLines: ["Clear spaces.", "Strong signals."], audience: "Tesla · Signs & Graphics Designer", summary: "Environmental graphics shaped from concept through production—combining wayfinding, typography, fabrication knowledge, vendor coordination, and hands-on installation experience.", projectIds: ["dayspring-events", "climate-progress", "cals-corner", "house-number-signage", "brown-bear-tree"], relatedProjectIds: ["field-guides", "matchwell"] },
