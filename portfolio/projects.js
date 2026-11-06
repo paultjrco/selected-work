@@ -77,6 +77,42 @@ window.PORTFOLIO_DATA = {
       tags: ["fabrication", "foam", "scenic", "prop", "prototype", "finishing"]
     },
     {
+      id: "modular-wedding-arch-featured",
+      title: "Modular Wedding Arch & Backdrop",
+      context: "Event environment · Reusable scenic structure",
+      status: "Completed · Reused across multiple events",
+      image: "portfolio/images-web/modular-backdrop-wedding-couple-blurred.jpg",
+      alt: "Modular wooden backdrop in use at a wedding, with the couple blurred so the structure remains the focus",
+      media: [
+        { type: "image", src: "portfolio/images-web/modular-backdrop-wedding-couple-blurred.jpg", alt: "Modular wooden backdrop in use at a wedding, with the couple blurred so the structure remains the focus" },
+        { type: "image", src: "portfolio/images-web/modular-wedding-arch-joinery.jpg", alt: "Corner of the modular hardwood wedding arch showing its bracing and reusable bolted joinery" }
+      ],
+      description: [
+        "Designed and fabricated a hardwood arch and backdrop for repeated use in weddings, branded photo opportunities, and custom event environments.",
+        "Developed the structure for assembly, disassembly, transport, reuse, and clean presentation—relevant experience for custom photobooth exteriors that need to be visually distinctive and practical in changing venues."
+      ],
+      capabilities: ["Custom backdrops", "Modular design", "Hardwood fabrication", "Reusable joinery", "Transport planning", "Finish work"],
+      tags: ["fabrication", "backdrop", "modular", "events", "woodworking", "reuse"]
+    },
+    {
+      id: "plinko-game-featured",
+      title: "Interactive Plinko Game",
+      context: "Community event · Interactive physical experience",
+      status: "Completed",
+      image: "portfolio/images-web/plinko-concept.png",
+      alt: "SketchUp concept view of a freestanding Plinko game with a field of pegs",
+      media: [
+        { type: "youtube", src: "https://www.youtube.com/embed/dfcgtPTLm1o?rel=0", title: "Interactive Plinko game video" },
+        { type: "image", src: "portfolio/images-web/plinko-concept.png", alt: "SketchUp concept view of a freestanding Plinko game with a field of pegs" }
+      ],
+      description: [
+        "Designed and built an LED-lit Plinko board with a rotating puck-release mechanism for participatory event use.",
+        "The project demonstrates playful interaction design, physical construction, mechanism planning, and the translation of a digital concept into an engaging event object."
+      ],
+      capabilities: ["Interactive experiences", "SketchUp", "Game design", "Physical fabrication", "Event engagement"],
+      tags: ["fabrication", "interactive", "events", "game", "prototyping"]
+    },
+    {
       id: "house-number-signage",
       title: "Custom Residential House-Number Sign",
       context: "Private residence · Dimensional signage design and fabrication",
@@ -219,7 +255,7 @@ window.PORTFOLIO_DATA = {
     prototype: { title: "Physical ideas, made tangible.", summary: "A focused selection of experiential design, prototyping, fabrication, and installation work.", projectIds: ["brown-bear-tree", "cals-corner", "randall-core-samples", "asian-art-seating", "climate-progress"], relatedProjectIds: ["plinko-game", "rise-stage-risers", "cat-shelter", "bathroom-remodel"] },
     museum: { title: "Experiences built for public spaces.", summary: "Selected museum, educational, and interactive work shaped through prototyping, fabrication, and careful installation.", projectIds: ["randall-core-samples", "asian-art-installations", "asian-art-seating", "cals-corner"] },
     fabrication: { title: "From material study to finished environment.", summary: "Hands-on work spanning scenic construction, woodworking, dimensional graphics, finishing, and installation.", projectIds: ["brown-bear-tree", "asian-art-installations", "asian-art-seating", "climate-progress", "cals-corner"], relatedProjectIds: ["rise-stage-risers", "cat-shelter", "plinko-game", "bathroom-remodel"] },
-    "joey-the-cat": { title: "Built for attention. Made to last.", titleLines: ["Built for attention.", "Made to last."], audience: "Joey the Cat · Experiential Fabricator / Designer", summary: "Hands-on scenic fabrication, foam modeling, modular construction, dimensional graphics, and finish work for playful environments that need to look great and hold up in the real world.", projectIds: ["traffic-cone-scenic-prototype", "brown-bear-tree", "cals-corner", "climate-progress", "asian-art-seating", "asian-art-installations"], relatedProjectIds: ["modular-wedding-arch", "rise-stage-risers", "house-number-sign", "plinko-game"], relatedLabel: "Additional fabrication work", relatedTitle: "More built work", relatedSummary: "Additional examples of construction planning, reusable structures, dimensional fabrication, and interactive physical experiences." },
+    "joey-the-cat": { title: "Built for attention. Made to last.", titleLines: ["Built for attention.", "Made to last."], audience: "Joey the Cat · Experiential Fabricator / Designer", summary: "Hands-on scenic fabrication, foam modeling, modular construction, dimensional graphics, and finish work for playful environments that need to look great and hold up in the real world.", projectIds: ["brown-bear-tree", "traffic-cone-scenic-prototype", "modular-wedding-arch-featured", "cals-corner", "plinko-game-featured", "asian-art-seating"], relatedProjectIds: ["climate-progress", "asian-art-installations", "rise-stage-risers", "house-number-sign"], relatedLabel: "Additional fabrication work", relatedTitle: "More built work", relatedSummary: "Additional examples of dimensional graphics, exhibition installation, stage fabrication, and site-specific problem-solving." },
     "212073": { title: "Thinking it through. Making it real.", titleLines: ["Thinking it through.", "Making it real."], audience: "Aquent · Retail Store Design Prototyper", summary: "A designer’s eye, User Experience (UX) instincts, and a prototyper’s hands—turning ambiguous ideas into testable digital and physical experiences.", projectIds: ["brown-bear-tree", "randall-core-samples", "asian-art-installations", "climate-progress", "asian-art-seating", "cals-corner"], relatedProjectIds: ["house-number-sign", "modular-wedding-arch", "vendor-assistant", "ai-work-log", "matchwell", "field-guides", "family-health-tracker"] },
     "212080": { title: "Demos that invite interaction.", titleLines: ["Demos that invite", "interaction."], audience: "Aquent · Interactive Designer — Retail Demos", summary: "Interactive product stories shaped through mobile UX, self-running presentations, visual systems, responsive prototyping, and production-minded design across digital screens and physical spaces.", projectIds: ["pocket-portfolio", "dayspring-events", "brown-bear-tree"], relatedProjectIds: ["goodbudget", "matchwell", "field-guides", "family-health-tracker", "vendor-assistant"] },
     "276818": { title: "Clear spaces. Strong signals.", titleLines: ["Clear spaces.", "Strong signals."], audience: "Tesla · Signs & Graphics Designer", summary: "Environmental graphics shaped from concept through production—combining wayfinding, typography, fabrication knowledge, vendor coordination, and hands-on installation experience.", projectIds: ["dayspring-events", "climate-progress", "cals-corner", "house-number-signage", "brown-bear-tree"], relatedProjectIds: ["field-guides", "matchwell"] },

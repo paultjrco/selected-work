@@ -140,7 +140,16 @@
       mediaWrap.className = "project__media-item";
       mediaWrap.hidden = mediaIndex !== 0;
 
-      if (media.type === "video") {
+      if (media.type === "youtube") {
+        const embed = document.createElement("iframe");
+        embed.className = "project__media project__media--embed";
+        embed.src = media.src;
+        embed.title = media.title || "YouTube video";
+        embed.loading = "lazy";
+        embed.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        embed.allowFullscreen = true;
+        mediaWrap.appendChild(embed);
+      } else if (media.type === "video") {
         const video = document.createElement("video");
         video.className = "project__media project__media--video";
         video.controls = true;

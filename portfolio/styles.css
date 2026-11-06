@@ -253,6 +253,10 @@ h1 {
   object-fit: contain;
 }
 
+.project__media--embed {
+  border: 0;
+}
+
 .project__link {
   display: inline-block;
   margin-top: 1.2rem;
