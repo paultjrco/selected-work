@@ -314,13 +314,24 @@
           mediaWrap.className = "related-project__media-item";
           mediaWrap.hidden = mediaIndex !== 0;
 
-          const image = document.createElement("img");
-          image.className = media.fit === "contain" ? "related-project__media--contain" : "";
-          image.src = media.src;
-          image.alt = media.alt || "";
-          image.loading = "lazy";
-          image.decoding = "async";
-          mediaWrap.appendChild(image);
+          if (media.type === "youtube") {
+            const embed = document.createElement("iframe");
+            embed.className = "related-project__media--embed";
+            embed.src = media.src;
+            embed.title = media.title || "YouTube video";
+            embed.loading = "lazy";
+            embed.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+            embed.allowFullscreen = true;
+            mediaWrap.appendChild(embed);
+          } else {
+            const image = document.createElement("img");
+            image.className = media.fit === "contain" ? "related-project__media--contain" : "";
+            image.src = media.src;
+            image.alt = media.alt || "";
+            image.loading = "lazy";
+            image.decoding = "async";
+            mediaWrap.appendChild(image);
+          }
           renderedMedia.push(mediaWrap);
           mediaTrack.appendChild(mediaWrap);
         });
