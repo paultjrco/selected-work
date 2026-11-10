@@ -113,7 +113,7 @@
     const article = document.createElement("article");
     article.className = `project project--${project.id}`;
 
-    const mediaItems = project.media || [
+    const mediaItems = project.media || (project.image ? [
       {
         type: "image",
         src: project.image,
@@ -127,10 +127,11 @@
             label: project.videoLabel || "Process video"
           }]
         : [])
-    ];
+    ] : []);
 
     const mediaSlider = document.createElement("div");
     mediaSlider.className = "project__media-slider";
+    mediaSlider.hidden = !mediaItems.length;
     const mediaTrack = document.createElement("div");
     mediaTrack.className = "project__media-track";
     const renderedMedia = [];
