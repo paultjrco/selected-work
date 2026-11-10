@@ -95,6 +95,27 @@ window.PORTFOLIO_DATA = {
       tags: ["fabrication", "backdrop", "modular", "events", "woodworking", "reuse"]
     },
     {
+      id: "goodbudget-marathon-featured",
+      title: "Goodbudget — From Prototype to Consumer Product",
+      context: "Dayspring Partners · Product Designer / Lead Visual Designer · 2009–2023",
+      status: "14-year product contribution",
+      image: "portfolio/images-web/goodbudget-web-dashboard.png",
+      alt: "Goodbudget web dashboard showing envelope balances, transaction controls, and recent activity",
+      media: [
+        { type: "image", src: "portfolio/images-web/goodbudget-web-dashboard.png", alt: "Goodbudget web dashboard showing envelope balances, transaction controls, and recent activity", fit: "contain" },
+        { type: "image", src: "portfolio/images-web/goodbudget-transaction-selection.jpg", alt: "Goodbudget transaction-management screen with a selected transaction and bulk action controls", fit: "contain" },
+        { type: "image", src: "portfolio/images-web/goodbudget-mobile-envelopes-report.png", alt: "Goodbudget iPhone screens showing envelope balances and a color-coded spending report", fit: "contain" },
+        { type: "image", src: "portfolio/images-web/goodbudget-budget-allocation-report.png", alt: "Goodbudget budget-allocation report combining a pie chart with detailed envelope values", fit: "contain" },
+        { type: "image", src: "portfolio/images-web/goodbudget-identity.png", alt: "Early Goodbudget identity with the envelope mascot, integrated wordmark, and Formerly EEBA label", fit: "contain" }
+      ],
+      description: [
+        "Helped shape Goodbudget from its earliest prototype through multiple generations of web and mobile experiences, designing interaction flows, visual identity, interface components, and reusable systems.",
+        "The work focused on making complex information approachable through clear hierarchy, intuitive interactions, expressive feedback, and close collaboration with developers and stakeholders—experience directly relevant to player-facing systems and interactions."
+      ],
+      capabilities: ["Interaction design", "Cross-platform UX", "Design systems", "Visual communication", "Complex workflows", "Developer collaboration"],
+      tags: ["ux", "interaction", "systems", "mobile", "web", "visual-design"]
+    },
+    {
       id: "plinko-game-featured",
       title: "Interactive Plinko Game",
       context: "Community event · Interactive physical experience",
@@ -255,6 +276,7 @@ window.PORTFOLIO_DATA = {
     prototype: { title: "Physical ideas, made tangible.", summary: "A focused selection of experiential design, prototyping, fabrication, and installation work.", projectIds: ["brown-bear-tree", "cals-corner", "randall-core-samples", "asian-art-seating", "climate-progress"], relatedProjectIds: ["plinko-game", "rise-stage-risers", "cat-shelter", "bathroom-remodel"] },
     museum: { title: "Experiences built for public spaces.", summary: "Selected museum, educational, and interactive work shaped through prototyping, fabrication, and careful installation.", projectIds: ["randall-core-samples", "asian-art-installations", "asian-art-seating", "cals-corner"] },
     fabrication: { title: "From material study to finished environment.", summary: "Hands-on work spanning scenic construction, woodworking, dimensional graphics, finishing, and installation.", projectIds: ["brown-bear-tree", "asian-art-installations", "asian-art-seating", "climate-progress", "cals-corner"], relatedProjectIds: ["rise-stage-risers", "cat-shelter", "plinko-game", "bathroom-remodel"] },
+    marathon: { title: "Interactions that make complexity feel clear.", titleLines: ["Interactions that make", "complexity feel clear."], audience: "Bungie · Marathon Interaction Designer (Contract)", summary: "UX and visual design work focused on player-centered interactions, clear systems, iterative prototyping, visual communication, and cross-functional collaboration.", projectIds: ["goodbudget-marathon-featured", "pocket-portfolio", "dayspring-events"], relatedProjectIds: ["matchwell", "field-guides", "family-health-tracker"], relatedLabel: "Additional UX case studies", relatedTitle: "More interaction and systems work", relatedSummary: "Further examples of ambiguous problem solving, responsive information systems, prototyping, and user-centered product design." },
     "joey-the-cat": { title: "Built for attention. Made to last.", titleLines: ["Built for attention.", "Made to last."], audience: "Joey the Cat · Experiential Fabricator / Designer", summary: "Hands-on scenic fabrication, foam modeling, modular construction, dimensional graphics, and finish work for playful environments that need to look great and hold up in the real world.", projectIds: ["brown-bear-tree", "traffic-cone-scenic-prototype", "modular-wedding-arch-featured", "cals-corner", "plinko-game-featured", "asian-art-seating"], relatedProjectIds: ["climate-progress", "asian-art-installations", "rise-stage-risers", "house-number-sign"], relatedLabel: "Additional fabrication work", relatedTitle: "More built work", relatedSummary: "Additional examples of dimensional graphics, exhibition installation, stage fabrication, and site-specific problem-solving." },
     "212073": { title: "Thinking it through. Making it real.", titleLines: ["Thinking it through.", "Making it real."], audience: "Aquent · Retail Store Design Prototyper", summary: "A designer’s eye, User Experience (UX) instincts, and a prototyper’s hands—turning ambiguous ideas into testable digital and physical experiences.", projectIds: ["brown-bear-tree", "randall-core-samples", "asian-art-installations", "climate-progress", "asian-art-seating", "cals-corner"], relatedProjectIds: ["house-number-sign", "modular-wedding-arch", "vendor-assistant", "ai-work-log", "matchwell", "field-guides", "family-health-tracker"] },
     "212080": { title: "Demos that invite interaction.", titleLines: ["Demos that invite", "interaction."], audience: "Aquent · Interactive Designer — Retail Demos", summary: "Interactive product stories shaped through mobile UX, self-running presentations, visual systems, responsive prototyping, and production-minded design across digital screens and physical spaces.", projectIds: ["pocket-portfolio", "dayspring-events", "brown-bear-tree"], relatedProjectIds: ["goodbudget", "matchwell", "field-guides", "family-health-tracker", "vendor-assistant"] },
