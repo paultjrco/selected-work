@@ -120,6 +120,11 @@ window.PORTFOLIO_DATA = {
       title: "Matchwell — Healthcare Staffing Platform",
       context: "Dayspring Partners · 0-to-1 product design",
       status: "Case study",
+      image: "portfolio/images-web/matchwell-featured.png",
+      alt: "Matchwell travel nurse staffing application screens",
+      media: [
+        { type: "image", src: "portfolio/images-web/matchwell-featured.png", alt: "Matchwell travel nurse staffing application screens", fit: "cover" }
+      ],
       description: [
         "Led a complex 0-to-1 product from discovery and whiteboard concepts through user flows, iterative reviews, and high-fidelity prototypes.",
         "The work demonstrates autonomous problem solving across a multi-sided workflow, translating ambiguous requirements into clear interactions through research, stakeholder collaboration, and rapid iteration."

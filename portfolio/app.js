@@ -266,7 +266,7 @@
       link.href = project.url;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      link.textContent = "Open live experience";
+      link.textContent = project.url.includes("/case_study/") ? "Read case study" : "Open live experience";
       content.appendChild(link);
     }
 
